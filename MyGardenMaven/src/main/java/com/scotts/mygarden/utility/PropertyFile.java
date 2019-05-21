@@ -11,7 +11,7 @@ public class PropertyFile {
         try {
         	// Load the properties File
         	Properties pro= new Properties();
-            File fl= new File ("D:\\Priyanka\\eclipse-workspace\\MyGardenMaven\\constant.properties");
+            File fl= new File ("C:\\Users\\DELL\\git\\MyGarden\\MyGardenMaven\\constant.properties");
             FileInputStream fis = new FileInputStream(fl);
             pro.load(fis);
             str = pro.getProperty(PropertyName);
