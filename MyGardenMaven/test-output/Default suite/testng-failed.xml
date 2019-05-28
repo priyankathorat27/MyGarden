@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scotts.mygarden.test.TestGuestUserSignup">
+      <class name="com.scotts.mygarden.test.TestLogin">
         <methods>
-          <include name="setup"/>
-          <include name="GuestUser"/>
+          <include name="Setup"/>
+          <include name="ValidLogin"/>
         </methods>
-      </class> <!-- com.scotts.mygarden.test.TestGuestUserSignup -->
+      </class> <!-- com.scotts.mygarden.test.TestLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,16 +17,16 @@ public class SignupPage extends LaunchApp {
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/tv_continue_as_guest")
 	WebElement guestUser;
 	
-	@AndroidFindBy(xpath = "(\\android.widget.EditText)[1]")
+	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Email']")
 	WebElement inputemail;
 	
-	@AndroidFindBy(xpath = "(\\android.widget.EditText)[2]")
+	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Password']")
 	WebElement inputpassword;
 	
-	@AndroidFindBy(xpath = "(\\android.widget.EditText)[3]")
+	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Confirm Password']")
 	WebElement inputconfirmpassword;
 	
-	@AndroidFindBy(className = "android.widget.Button")
+	@AndroidFindBy(xpath = "(//android.widget.Button)[3]")
 	WebElement createaccountbtn;
 	
 	public WebElement guestUser() {
