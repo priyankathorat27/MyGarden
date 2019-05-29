@@ -1,165 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="11" passed="0" failed="2" skipped="0">
+<testng-results ignored="9" total="11" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-29T12:03:17Z" name="Suite" finished-at="2019-05-29T12:04:16Z" duration-ms="59259">
+  <suite started-at="2019-05-29T13:36:33Z" name="Suite" finished-at="2019-05-29T13:38:02Z" duration-ms="88869">
     <groups>
       <group name="new">
         <method signature="TestSignup.GuestUserInterests()[pri:2, instance:com.scotts.mygarden.test.TestSignup@49912c99]" name="GuestUserInterests" class="com.scotts.mygarden.test.TestSignup"/>
         <method signature="TestSignup.GuestUserSelectLessInterests()[pri:3, instance:com.scotts.mygarden.test.TestSignup@49912c99]" name="GuestUserSelectLessInterests" class="com.scotts.mygarden.test.TestSignup"/>
       </group> <!-- new -->
     </groups>
-    <test started-at="2019-05-29T12:03:17Z" name="Test" finished-at="2019-05-29T12:04:16Z" duration-ms="59259">
+    <test started-at="2019-05-29T13:36:33Z" name="Test" finished-at="2019-05-29T13:38:02Z" duration-ms="88869">
       <class name="com.scotts.mygarden.test.TestSignup">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T12:03:17Z" name="setup" finished-at="2019-05-29T12:03:28Z" duration-ms="10908" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:36:34Z" name="setup" finished-at="2019-05-29T13:36:46Z" duration-ms="12083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GuestUserInterests()[pri:2, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T12:03:28Z" name="GuestUserInterests" description="MGTC_28: Verify the functionality when user select 3 interests while creating the guest users" finished-at="2019-05-29T12:03:42Z" duration-ms="14177" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Plants for Small Spaces'})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Plants for Small Spaces'})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-at com.scotts.mygarden.test.TestSignup.GuestUserInterests(TestSignup.java:158)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5b989dc7 (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Plants for Small Spaces'})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3OLENNV', ip: '10.15.4.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="GuestUserInterests()[pri:2, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:36:46Z" name="GuestUserInterests" description="MGTC_28: Verify the functionality when user select 3 interests while creating the guest users" finished-at="2019-05-29T13:37:13Z" duration-ms="27036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuestUserInterests -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T12:03:42Z" name="TearDrop" finished-at="2019-05-29T12:03:45Z" duration-ms="3674" status="PASS">
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:13Z" name="TearDrop" finished-at="2019-05-29T13:37:16Z" duration-ms="3612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T12:03:45Z" name="setup" finished-at="2019-05-29T12:03:57Z" duration-ms="11821" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:16Z" name="setup" finished-at="2019-05-29T13:37:28Z" duration-ms="11931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GuestUserSelectLessInterests()[pri:3, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T12:03:57Z" name="GuestUserSelectLessInterests" description="MGTC_29: Verify the functionality when user selects the interest less than 3" finished-at="2019-05-29T12:04:12Z" duration-ms="14923" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Plants for Small Spaces'})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Plants for Small Spaces'})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-at com.scotts.mygarden.test.TestSignup.GuestUserSelectLessInterests(TestSignup.java:193)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7b60c3e (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Plants for Small Spaces'})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3OLENNV', ip: '10.15.4.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="GuestUserSelectLessInterests()[pri:3, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:28Z" name="GuestUserSelectLessInterests" description="MGTC_29: Verify the functionality when user selects the interest less than 3" finished-at="2019-05-29T13:37:58Z" duration-ms="29726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuestUserSelectLessInterests -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T12:04:12Z" name="TearDrop" finished-at="2019-05-29T12:04:16Z" duration-ms="3706" status="PASS">
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:58Z" name="TearDrop" finished-at="2019-05-29T13:38:02Z" duration-ms="4443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
