@@ -5,7 +5,9 @@
     <classes>
       <class name="com.scotts.mygarden.test.TestLogin">
         <methods>
+          <include name="InvalidEmailInvalidPwd"/>
           <include name="Setup"/>
+          <include name="TearDrop"/>
           <include name="ValidLogin"/>
         </methods>
       </class> <!-- com.scotts.mygarden.test.TestLogin -->

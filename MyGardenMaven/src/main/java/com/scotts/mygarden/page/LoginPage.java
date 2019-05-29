@@ -24,6 +24,9 @@ public class LoginPage extends LaunchApp {
 	@AndroidFindBy(xpath = "//android.widget.Button[@content-desc = 'LOG IN']")
 	WebElement loginbtn;
 	
+	@AndroidFindBy(xpath = "//android.view.View[@content-desc = 'Forgot Password?']")
+	WebElement forgotpasswordlink;
+	
 	
 	public WebElement loginEmail() {
 		
@@ -38,6 +41,11 @@ public class LoginPage extends LaunchApp {
    public WebElement loginbtn() {
 	   
 	   return loginbtn;
+   }
+   
+   public WebElement forgotpasswordlink() {
+	   
+	   return forgotpasswordlink;
    }
 
 
