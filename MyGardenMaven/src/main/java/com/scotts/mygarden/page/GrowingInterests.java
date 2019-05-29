@@ -21,13 +21,13 @@ public class GrowingInterests extends LaunchApp {
 	@AndroidFindBy(className = "android.widget.ImageButton")
 	WebElement backarrow;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Plants for Small Spaces'")
+	@AndroidFindBy(xpath = "//*[@text='Plants for Small Spaces']")
 	WebElement smallspacesInterest;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Plants for Medium Spaces'")
+	@AndroidFindBy(xpath = "//*[@text='Plants for Medium Spaces']")
 	WebElement mediumspacesInterest;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Plants for Large Spaces'")
+	@AndroidFindBy(xpath = "//*[@text='Plants for Large Spaces']")
 	WebElement largespacesInterest;
 	
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/btn_next")
