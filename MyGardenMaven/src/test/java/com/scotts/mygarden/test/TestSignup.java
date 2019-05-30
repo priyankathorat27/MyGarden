@@ -3,11 +3,7 @@ package com.scotts.mygarden.test;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -28,7 +24,7 @@ public class TestSignup extends LaunchApp {
 	
 	
 	@BeforeMethod(alwaysRun = true)
-	public void setup() throws MalformedURLException {
+	public void Setup() throws MalformedURLException {
 		System.out.println("Started Server");
 		AppInitialize();
 		

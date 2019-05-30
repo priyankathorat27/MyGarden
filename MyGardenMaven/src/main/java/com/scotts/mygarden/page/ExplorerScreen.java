@@ -21,8 +21,29 @@ public class ExplorerScreen extends LaunchApp {
 	@AndroidFindBy(className = "android.widget.RelativeLayout")
 	WebElement searchfield;
 	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Edibles']")
+	WebElement edibles;
 	
-	public WebElement myaccount() {
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Decoratives']")
+	WebElement decoratives;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Pests']")
+	WebElement pests;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Weeds']")
+	WebElement weeds;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Diseases']")
+	WebElement diseases;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Out Of Season']")
+	WebElement outofseason;
+	
+	@AndroidFindBy(className = "android.widget.ImageButton")
+	WebElement backbtn;
+	
+	
+    public WebElement myaccount() {
 		
 		return myaccount;
 	}
@@ -31,5 +52,40 @@ public class ExplorerScreen extends LaunchApp {
 		
 		return searchfield;
 	}
+	
+	public WebElement edibles() {
+		
+		return edibles;
+	}
+	
+    public WebElement decoratives() {
+		
+		return decoratives;
+	}
+    
+    public WebElement pests() {
+		
+		return pests;
+	}
+    
+    public WebElement weeds() {
+		
+		return weeds;
+	}
+    
+    public WebElement diseases() {
+		
+		return diseases;
+	}
+    
+    public WebElement outofseason() {
+    	
+    	return outofseason;
+    }
+    
+    public WebElement backbtn() {
+    	
+    	return backbtn;
+    }
 
 }
