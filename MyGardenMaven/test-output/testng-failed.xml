@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="new"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scotts.mygarden.test.TestSignup">
+      <class name="com.scotts.mygarden.test.TestExplorer">
         <methods>
-          <include name="GuestUserInterests"/>
+          <include name="Decoratives"/>
+          <include name="Diseases"/>
+          <include name="Pests"/>
+          <include name="Weeds"/>
           <include name="setup"/>
-          <include name="TearDrop"/>
-          <include name="GuestUserSelectLessInterests"/>
         </methods>
-      </class> <!-- com.scotts.mygarden.test.TestSignup -->
+      </class> <!-- com.scotts.mygarden.test.TestExplorer -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

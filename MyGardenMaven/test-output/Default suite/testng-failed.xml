@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scotts.mygarden.test.TestLogin">
+      <class name="com.scotts.mygarden.test.TestExplorer">
         <methods>
-          <include name="InvalidEmailInvalidPwd"/>
-          <include name="Setup"/>
-          <include name="TearDrop"/>
-          <include name="ValidLogin"/>
+          <include name="Decoratives"/>
+          <include name="Diseases"/>
+          <include name="Pests"/>
+          <include name="Weeds"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.scotts.mygarden.test.TestLogin -->
+      </class> <!-- com.scotts.mygarden.test.TestExplorer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

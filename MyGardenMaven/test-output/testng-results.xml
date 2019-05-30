@@ -1,41 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="11" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-29T13:36:33Z" name="Suite" finished-at="2019-05-29T13:38:02Z" duration-ms="88869">
+  <suite started-at="2019-05-30T11:45:06Z" name="Default suite" finished-at="2019-05-30T11:51:11Z" duration-ms="365197">
     <groups>
-      <group name="new">
-        <method signature="TestSignup.GuestUserInterests()[pri:2, instance:com.scotts.mygarden.test.TestSignup@49912c99]" name="GuestUserInterests" class="com.scotts.mygarden.test.TestSignup"/>
-        <method signature="TestSignup.GuestUserSelectLessInterests()[pri:3, instance:com.scotts.mygarden.test.TestSignup@49912c99]" name="GuestUserSelectLessInterests" class="com.scotts.mygarden.test.TestSignup"/>
-      </group> <!-- new -->
     </groups>
-    <test started-at="2019-05-29T13:36:33Z" name="Test" finished-at="2019-05-29T13:38:02Z" duration-ms="88869">
-      <class name="com.scotts.mygarden.test.TestSignup">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:36:34Z" name="setup" finished-at="2019-05-29T13:36:46Z" duration-ms="12083" status="PASS">
+    <test started-at="2019-05-30T11:45:06Z" name="Default test" finished-at="2019-05-30T11:51:11Z" duration-ms="365197">
+      <class name="com.scotts.mygarden.test.TestExplorer">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:45:06Z" name="setup" finished-at="2019-05-30T11:45:39Z" duration-ms="33147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GuestUserInterests()[pri:2, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:36:46Z" name="GuestUserInterests" description="MGTC_28: Verify the functionality when user select 3 interests while creating the guest users" finished-at="2019-05-29T13:37:13Z" duration-ms="27036" status="PASS">
+        <test-method signature="Edibles()[pri:1, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:45:39Z" name="Edibles" description="MGTC_46: Verify the data on the page of edibles screen" finished-at="2019-05-30T11:46:15Z" duration-ms="35885" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GuestUserInterests -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:13Z" name="TearDrop" finished-at="2019-05-29T13:37:16Z" duration-ms="3612" status="PASS">
+        </test-method> <!-- Edibles -->
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:46:15Z" name="TearDrop" finished-at="2019-05-30T11:46:19Z" duration-ms="4231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:16Z" name="setup" finished-at="2019-05-29T13:37:28Z" duration-ms="11931" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:46:19Z" name="setup" finished-at="2019-05-30T11:46:57Z" duration-ms="37413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GuestUserSelectLessInterests()[pri:3, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:28Z" name="GuestUserSelectLessInterests" description="MGTC_29: Verify the functionality when user selects the interest less than 3" finished-at="2019-05-29T13:37:58Z" duration-ms="29726" status="PASS">
+        <test-method signature="Decoratives()[pri:2, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:46:57Z" name="Decoratives" description="MGTC_150: Verify the data on the page of Decoratives screen" finished-at="2019-05-30T11:47:33Z" duration-ms="36886" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GuestUserSelectLessInterests -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSignup@49912c99]" started-at="2019-05-29T13:37:58Z" name="TearDrop" finished-at="2019-05-29T13:38:02Z" duration-ms="4443" status="PASS">
+        </test-method> <!-- Decoratives -->
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:47:33Z" name="TearDrop" finished-at="2019-05-30T11:47:37Z" duration-ms="3941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
-      </class> <!-- com.scotts.mygarden.test.TestSignup -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:47:37Z" name="setup" finished-at="2019-05-30T11:48:11Z" duration-ms="34064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Pests()[pri:3, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:48:11Z" name="Pests" description="MGTC_151: Verify the data on the page of Pests screen" finished-at="2019-05-30T11:48:45Z" duration-ms="33822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pests -->
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:48:45Z" name="TearDrop" finished-at="2019-05-30T11:48:50Z" duration-ms="4670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDrop -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:48:50Z" name="setup" finished-at="2019-05-30T11:49:23Z" duration-ms="32987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Weeds()[pri:4, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:49:23Z" name="Weeds" description="MGTC_152: Verify the data on the page of Weeds screen" finished-at="2019-05-30T11:49:58Z" duration-ms="34717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Weeds -->
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:49:58Z" name="TearDrop" finished-at="2019-05-30T11:50:01Z" duration-ms="3574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDrop -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:50:01Z" name="setup" finished-at="2019-05-30T11:50:33Z" duration-ms="32245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Diseases()[pri:5, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:50:33Z" name="Diseases" description="MGTC_153: Verify the data on the page of Diseases screen" finished-at="2019-05-30T11:51:07Z" duration-ms="33364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Diseases -->
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@120f102b]" started-at="2019-05-30T11:51:07Z" name="TearDrop" finished-at="2019-05-30T11:51:11Z" duration-ms="4198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDrop -->
+      </class> <!-- com.scotts.mygarden.test.TestExplorer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
