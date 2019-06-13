@@ -4,18 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="new"/>
+        <include name="smoke"/>
       </run>
     </groups>
     <classes>
-      <class name="com.scotts.mygarden.test.TestSignup">
+      <class name="com.scotts.mygarden.test.TestLogin">
         <methods>
-          <include name="GuestUserInterests"/>
-          <include name="setup"/>
+          <include name="Setup"/>
+          <include name="ValidLoginTestCase"/>
           <include name="TearDrop"/>
-          <include name="GuestUserSelectLessInterests"/>
         </methods>
-      </class> <!-- com.scotts.mygarden.test.TestSignup -->
+      </class> <!-- com.scotts.mygarden.test.TestLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,10 +1,12 @@
 package com.scotts.mygarden.page;
 
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 
 import com.scotts.mygarden.baseclass.LaunchApp;
 
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
@@ -12,51 +14,124 @@ public class GrowingInterests extends LaunchApp {
 	
 	public GrowingInterests() {
 		
+		super();
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	@CacheLookup
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/btn_skip")
-	WebElement skipbtn;
+	private static AndroidElement skipbtn;
 	
+	@CacheLookup
 	@AndroidFindBy(className = "android.widget.ImageButton")
-	WebElement backarrow;
+	private static AndroidElement backarrow;
 	
+	@CacheLookup
 	@AndroidFindBy(xpath = "//*[@text='Plants for Small Spaces']")
-	WebElement smallspacesInterest;
+	private static AndroidElement smallspacesInterest;
 	
+	@CacheLookup
 	@AndroidFindBy(xpath = "//*[@text='Plants for Medium Spaces']")
-	WebElement mediumspacesInterest;
+	private static AndroidElement mediumspacesInterest;
 	
+	@CacheLookup
 	@AndroidFindBy(xpath = "//*[@text='Plants for Large Spaces']")
-	WebElement largespacesInterest;
+	private static AndroidElement largespacesInterest;
 	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Balcony or Patio Plants']")
+	private static AndroidElement balconyPatioPlants;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Outdoorsy Plants']")
+	private static AndroidElement outdoorsyPlants;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Plants I Can't Kill']")
+	private static AndroidElement plantsCantKill;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Yard to Table']")
+	private static AndroidElement yardToTable;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Flowers and More']")
+	private static AndroidElement flowersAndMore;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Leafy Looks']")
+	private static AndroidElement leafyLooks;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Share the Harvest']")
+	private static AndroidElement shareTheHarvest;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Plans for My Plants']")
+	private static AndroidElement plansForMyPlants;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Plants to Grow Together']")
+	private static AndroidElement plantsToGrowTogether;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//*[@text='Keep It Simple']")
+	private static AndroidElement keepItSimple;
+	
+	@CacheLookup
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/btn_next")
-	WebElement viewplantbtn;
+	private static AndroidElement viewplantbtn;
 	
 	
-	public WebElement skipbtn() {
-		return skipbtn;
+	public static ExplorerScreen skipInterest() {
+		
+		GrowingInterests.skipbtn.click();
+		return new ExplorerScreen();
+		
 	}
 	
-	public WebElement backarrow() {
-		return backarrow;
+	public static boolean InterestsVal() {
+		
+		return GrowingInterests.smallspacesInterest.isDisplayed();
+		
 	}
 	
-	public WebElement smallspacesInterest() {
-		return smallspacesInterest;
+	public static ExplorerScreen SelectInterests() {
+		
+		GrowingInterests.smallspacesInterest.click();
+		GrowingInterests.mediumspacesInterest.click();
+		GrowingInterests.largespacesInterest.click();
+		GrowingInterests.viewplantbtn.click();
+		
+		return new ExplorerScreen();
 	}
 	
-	public WebElement mediumspacesInterest() {
-		return mediumspacesInterest;
+    public static ExplorerScreen Select3Interests() {
+    	
+    	driver.findElement(MobileBy.AndroidUIAutomator(
+ 			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"keepItSimple\"));"));
+		
+		GrowingInterests.leafyLooks.click();
+		GrowingInterests.shareTheHarvest.click();
+		GrowingInterests.plantsToGrowTogether.click();
+		GrowingInterests.viewplantbtn.click();
+		
+		return new ExplorerScreen();
 	}
-	
-	public WebElement largespacesInterest() {
-		return largespacesInterest;
+    
+    public static GrowingInterests lessthan3Interests() {
+		
+		GrowingInterests.smallspacesInterest.click();
+		GrowingInterests.mediumspacesInterest.click();
+		GrowingInterests.viewplantbtn.click();
+		
+		return new GrowingInterests();
 	}
-	
-	public WebElement viewplantbtn() {
-		return viewplantbtn;
-	}
+    
+    public static boolean ViewPlantBtnVal() {
+    	
+    	return GrowingInterests.viewplantbtn.isEnabled();
+    }
 
 
 }
