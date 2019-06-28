@@ -11,6 +11,7 @@ import com.scotts.mygarden.baseclass.LaunchApp;
 import com.scotts.mygarden.page.ExplorerScreen;
 import com.scotts.mygarden.page.HomePage;
 import com.scotts.mygarden.page.LoginPage;
+import com.scotts.mygarden.page.PlantDetails;
 import com.scotts.mygarden.utility.Testcase;
 
 public class TestExplorer extends LaunchApp {
@@ -69,6 +70,19 @@ public class TestExplorer extends LaunchApp {
 		ExplorerScreen explorer = new ExplorerScreen();
 		explorer.DiseasesPage();
 		Assert.assertTrue(explorer.browseValidation());
+	}
+	
+	@Test(description = Testcase.tc78, groups = {"smoke"})
+	public void ExistingPlan() {
+		
+		ExplorerScreen explorer = new ExplorerScreen();
+		explorer.selectExistingPlan();
+		
+		PlantDetails details = new PlantDetails();
+		Assert.assertTrue(details.headerVal());
+		details.existingSetupPlan();
+		Assert.assertTrue(details.headerVal());
+		
 	}
 	
 	

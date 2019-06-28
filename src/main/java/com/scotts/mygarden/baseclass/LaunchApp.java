@@ -52,7 +52,7 @@ public class LaunchApp {
 		driver = new AndroidDriver<MobileElement>(new URL(proReader("url")+proReader("port")+"/wd/hub"), cap);
 		System.out.println("Application started...");
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 	}
 

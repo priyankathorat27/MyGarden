@@ -27,55 +27,55 @@ public class GrowingInterests extends LaunchApp {
 	private static AndroidElement backarrow;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Plants for Small Spaces']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants for Small Spaces')]")
 	private static AndroidElement smallspacesInterest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Plants for Medium Spaces']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants for Medium Spaces')]")
 	private static AndroidElement mediumspacesInterest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Plants for Large Spaces']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants for Large Spaces')]")
 	private static AndroidElement largespacesInterest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Balcony or Patio Plants']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Balcony or Patio Plants')]")
 	private static AndroidElement balconyPatioPlants;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Outdoorsy Plants']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Outdoorsy Plants')]")
 	private static AndroidElement outdoorsyPlants;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Plants I Can't Kill']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants I Can't Kill')]")
 	private static AndroidElement plantsCantKill;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Yard to Table']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Yard to Table')]")
 	private static AndroidElement yardToTable;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Flowers and More']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Flowers and More')]")
 	private static AndroidElement flowersAndMore;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Leafy Looks']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Leafy Looks')]")
 	private static AndroidElement leafyLooks;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Share the Harvest']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Share the Harvest')]")
 	private static AndroidElement shareTheHarvest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Plans for My Plants']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Plans for My Plants')]")
 	private static AndroidElement plansForMyPlants;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Plants to Grow Together']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants to Grow Together')]")
 	private static AndroidElement plantsToGrowTogether;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text='Keep It Simple']")
+	@AndroidFindBy(xpath = "//*[contains(@text, 'Keep It Simple')]")
 	private static AndroidElement keepItSimple;
 	
 	@CacheLookup

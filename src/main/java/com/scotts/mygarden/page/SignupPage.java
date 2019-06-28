@@ -18,32 +18,28 @@ public class SignupPage extends LaunchApp {
 	}
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/toolbar_title[@text = 'Sign Up']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Sign Up')]")
 	private static AndroidElement SignupTitle;
 
 	@CacheLookup
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/tv_continue_as_guest")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Continue as Guest')]")
 	private static AndroidElement guestUser;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Email']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Email')]")
 	private static AndroidElement inputemail;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Password']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Password')]")
 	private static AndroidElement inputpassword;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Confirm Password']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Confirm Password')]")
 	private static AndroidElement inputconfirmpassword;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "(//android.widget.Button)[3]")
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'CREATE ACCOUNT')]")
 	private static AndroidElement createaccountbtn;
-	
-	@CacheLookup
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/zipcode_text")
-	private static AndroidElement ziptext;
 	
 	
     public static boolean SignupValidation() {

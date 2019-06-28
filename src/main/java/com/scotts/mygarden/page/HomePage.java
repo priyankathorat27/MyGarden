@@ -32,7 +32,7 @@ public class HomePage extends LaunchApp {
 	
 	}
 	
-	public static SignupPage getStartedbtn() {
+	public SignupPage getStartedbtn() {
 		
 		HomePage.getStarted.click();
 		return new SignupPage();

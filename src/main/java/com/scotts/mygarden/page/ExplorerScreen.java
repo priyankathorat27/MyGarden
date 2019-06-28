@@ -25,30 +25,30 @@ public class ExplorerScreen extends LaunchApp {
 	
 	@CacheLookup
 	@AndroidFindBy(className = "android.widget.RelativeLayout")
-	static AndroidElement searchfield;
+	private static AndroidElement searchfield;
 	
 	@CacheLookup
- 	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Edibles']")
+ 	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Edibles')]")
  	private static AndroidElement edibles;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Decoratives']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Decoratives')]")
 	private static AndroidElement decoratives;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Pests']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Pests')]")
 	private static AndroidElement pests;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Weeds']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Weeds')]")
 	private static AndroidElement weeds;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Diseases']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Diseases')]")
 	private static AndroidElement diseases;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Out Of Season']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Out Of Season')]")
 	private static AndroidElement outofseason;
 	
 	@CacheLookup
@@ -56,28 +56,44 @@ public class ExplorerScreen extends LaunchApp {
 	private static AndroidElement backbtn;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[@text = 'Edibles']")
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Edibles')]")
 	private static AndroidElement ediblestitle;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[@text = 'Decoratives']")
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Decoratives')]")
 	private static AndroidElement decorativestitle;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[@text = 'Pests']")
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Pests')]")
 	private static AndroidElement peststitle;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[@text = 'Weeds']")
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Weeds')]")
 	private static AndroidElement weedstitle;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[@text = 'Diseases']")
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Diseases')]")
 	private static AndroidElement diseasestitle;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Browse by Category']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Browse by Category')]")
 	private static AndroidElement browsebycategory;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Bee Balm')]/preceding-sibling::android.widget.FrameLayout")
+	private static AndroidElement beeBalmLink;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Aloe vera')]/preceding-sibling::android.widget.FrameLayout")
+	private static AndroidElement aloeVeraLink;
+	
+	@CacheLookup
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/my_care_plans")
+	private static AndroidElement myGardenTab;
+	
+	@CacheLookup
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/fresh_cuts")
+	private static AndroidElement freshTips;
 
 
    public boolean browseValidation() {
@@ -142,9 +158,43 @@ public class ExplorerScreen extends LaunchApp {
 	   return new ExplorerScreen();
    }
    
-   public static boolean SearchVal() {
+   public boolean SearchVal() {
 	   
 	   return ExplorerScreen.searchfield.isDisplayed();
+   }
+   
+   public PlantDetails selectPlan() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bee Balm\"));"));
+	   ExplorerScreen.beeBalmLink.click();
+	   return new PlantDetails();
+   }
+   
+   public PlantDetails selectExistingPlan() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aloe vera\"));"));
+	   ExplorerScreen.aloeVeraLink.click();
+	   return new PlantDetails();
+   }
+   
+   public MyGardenPage GardenTab() {
+	   
+	   ExplorerScreen.myGardenTab.click();
+	   return new MyGardenPage();
+   }
+   
+   public FreshTipsPage FreshTipsTab() {
+	   
+	   ExplorerScreen.freshTips.click();
+	   return new FreshTipsPage();
+   }
+   
+   public MyAccountScreen AccountTab() {
+	   
+	   ExplorerScreen.myaccount.click();
+	   return new MyAccountScreen();
    }
    
 

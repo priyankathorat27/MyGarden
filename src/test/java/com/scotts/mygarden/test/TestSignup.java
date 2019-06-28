@@ -22,19 +22,46 @@ public class TestSignup extends LaunchApp {
 		System.out.println("Started Server");
 		AppInitialize();
 		
-		HomePage.getStartedbtn();
+		HomePage home = new HomePage();
+		home.getStartedbtn();
 
 	}
 	
-	
+	/*
 	@Test(description = Testcase.tc09)
 	public void GuestUserLink() {
 		
-		Assert.assertEquals(driver.getTitle(), SignupPage.SignupValidation());
+		Assert.assertTrue(SignupPage.SignupValidation());
 		SignupPage.VerificationGuestLink();
 		Assert.assertTrue(Zipcode.ZipcodeVal());
 	
-	}  
+	}
+	
+	@Test(description = Testcase.tc27)
+	public void GuestUserSkipInterest() {
+		
+		Assert.assertTrue(SignupPage.SignupValidation());
+		SignupPage.VerificationGuestLink();
+		Assert.assertTrue(Zipcode.ZipcodeVal());
+		Zipcode.zipcodeInput(proReader("code"));
+		Assert.assertTrue(GrowingInterests.InterestsVal());
+		GrowingInterests.skipInterest();
+		ExplorerScreen explorer = new ExplorerScreen();
+		Assert.assertTrue(explorer.SearchVal());		
+	} */
+	
+	@Test(priority = 2, description = Testcase.tc28)
+	public void GuestUserInterests() {
+		
+		Assert.assertTrue(SignupPage.SignupValidation());
+		SignupPage.VerificationGuestLink();
+		Assert.assertTrue(Zipcode.ZipcodeVal());
+		Zipcode.zipcodeInput(proReader("code"));
+		Assert.assertTrue(GrowingInterests.InterestsVal());
+		GrowingInterests.Select3Interests();
+		ExplorerScreen explorer = new ExplorerScreen();
+		Assert.assertTrue(explorer.SearchVal());
+	}
 	
 	@Test(priority = 1, description = Testcase.tc03)
 	public void ValidSignUp() {
@@ -44,49 +71,28 @@ public class TestSignup extends LaunchApp {
 		Zipcode.zipcodeInput(proReader("code"));
 		Assert.assertTrue(GrowingInterests.InterestsVal());
 		GrowingInterests.SelectInterests();
-		Assert.assertTrue(ExplorerScreen.SearchVal());
+		ExplorerScreen explorer = new ExplorerScreen();
+		Assert.assertTrue(explorer.SearchVal());
 
 	}
 	
-	
-	@Test(description = Testcase.tc27)
-	public void GuestUserSkipInterest() {
-		
-		Assert.assertEquals(driver.getTitle(), SignupPage.SignupValidation());
-		SignupPage.VerificationGuestLink();
-		Assert.assertTrue(Zipcode.ZipcodeVal());
-		Zipcode.zipcodeInput(proReader("code"));
-		Assert.assertTrue(GrowingInterests.InterestsVal());
-		GrowingInterests.skipInterest();
-		Assert.assertTrue(ExplorerScreen.SearchVal());		
-	}
-	
-	@Test(priority = 2, description = Testcase.tc28)
-	public void GuestUserInterests() {
-		
-		SignupPage.ScottsSignup(proReader("signupemail"), proReader("signuppassword"));
-		Assert.assertTrue(Zipcode.ZipcodeVal());
-		Zipcode.zipcodeInput(proReader("code"));
-		Assert.assertTrue(GrowingInterests.InterestsVal());
-		GrowingInterests.Select3Interests();
-		Assert.assertTrue(ExplorerScreen.SearchVal());
-	}
-	
+	/*
 	@Test(priority = 3, description = Testcase.tc29)
 	public void GuestUserSelectLessInterests() {
 		
-		SignupPage.ScottsSignup(proReader("signupemail"), proReader("signuppassword"));
+		Assert.assertTrue(SignupPage.SignupValidation());
+		SignupPage.VerificationGuestLink();
 		Assert.assertTrue(Zipcode.ZipcodeVal());
 		Zipcode.zipcodeInput(proReader("code"));
 		Assert.assertTrue(GrowingInterests.InterestsVal());
 		GrowingInterests.lessthan3Interests();
 		Assert.assertFalse(GrowingInterests.ViewPlantBtnVal());
-	}
+	} 
 	
 	@Test(description = Testcase.tc149)
 	public void InvalidZipcode() {
 		
-		Assert.assertEquals(driver.getTitle(), SignupPage.SignupValidation());
+		Assert.assertTrue(SignupPage.SignupValidation());
 		SignupPage.VerificationGuestLink();
 		Assert.assertTrue(Zipcode.ZipcodeVal());
 		Zipcode.invalidZipcodeInput(proReader("invalidCode"));
@@ -94,7 +100,7 @@ public class TestSignup extends LaunchApp {
 	
 	}  
 	
-	
+	*/
 	
 	@AfterMethod(alwaysRun = true)
 	public void TearDrop() {

@@ -19,23 +19,31 @@ public class LoginPage extends LaunchApp {
 	}
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/toolbar_title[@text = 'Log In']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Log In')]")
 	private static AndroidElement loginTitle;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Email']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Email')]")
 	private static AndroidElement loginEmail;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[@text = 'Password']")
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Password')]")
 	private static AndroidElement loginPassword;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.Button[@content-desc = 'LOG IN']")
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'LOG IN')]")
 	private static AndroidElement loginbtn;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.view.View[@content-desc = 'Forgot Password?']")
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'Facebook Facebook')]")
+	private static AndroidElement fbLogin;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'Google Google')]")
+	private static AndroidElement googleLogin;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'Forgot Password?')]")
 	private static AndroidElement forgotpasswordlink;
 
 	public boolean LoginValidation() {
@@ -55,19 +63,13 @@ public class LoginPage extends LaunchApp {
     	  
       }
     
-    
-    public boolean ValidationExplorer() {
-		
-		return ExplorerScreen.searchfield.isDisplayed();
-	}
-    
     public boolean ValidationForgotPwd() {
 		
 		return LoginPage.forgotpasswordlink.isDisplayed();	
 	}
     
     
-   public LoginPage InvalidData(String loginEmail, String loginPassword) {
+    public LoginPage InvalidData(String loginEmail, String loginPassword) {
     	
     	LoginPage.loginEmail.sendKeys(loginEmail);
     	driver.hideKeyboard();
@@ -77,6 +79,18 @@ public class LoginPage extends LaunchApp {
     	
 		return new LoginPage();
     	  
-      }
+     }
+   
+     public GooglePage GoogleBtn() {
+	   
+	   LoginPage.googleLogin.click();
+	   return new GooglePage();
+   }
+   
+   public FbPage FbBtn() {
+	   
+	   LoginPage.fbLogin.click();
+	   return new FbPage();
+   }
     
 }    
