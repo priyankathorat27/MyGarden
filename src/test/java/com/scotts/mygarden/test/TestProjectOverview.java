@@ -33,7 +33,7 @@ public class TestProjectOverview extends LaunchApp{
 		explorer.selectPlan();
 	}
 	
-/*	@Test(description = Testcase.tc62)
+/*	@Test(description = Testcase.TC62)
 	public void WhatYouNeedSection() {
 		
 		PlantDetails details = new PlantDetails();
@@ -41,7 +41,7 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(details.WhatYouNeedVal());
 	}
 	
-	@Test(description = Testcase.tc63)
+	@Test(description = Testcase.TC63)
 	public void Supplies() {
 		
 		PlantDetails details = new PlantDetails();
@@ -51,7 +51,7 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(sup.NonEssentials());
 	} */
 	
-	@Test(description = Testcase.tc64)
+	@Test(description = Testcase.TC64)
 	public void PrepPlantvideo() {
 		
 		PlantDetails details = new PlantDetails();
@@ -61,7 +61,7 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(details.PlantingInstructions());
 	}
 	
-	@Test(description = Testcase.tc72)
+	@Test(description = Testcase.TC72)
 	public void PrepPlant() {
 		
 		PlantDetails details = new PlantDetails();
@@ -73,7 +73,7 @@ public class TestProjectOverview extends LaunchApp{
 		prep.PrepClose();
 	}
 	
-/*	@Test(description = Testcase.tc77)
+/*	@Test(description = Testcase.TC77)
 	public void NewSetupPlan() {
 		
 		

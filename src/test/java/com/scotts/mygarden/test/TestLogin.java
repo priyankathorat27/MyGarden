@@ -29,7 +29,7 @@ public class TestLogin extends LaunchApp {
 		
 	}
 	
-	@Test(priority = 1, description = Testcase.tc15)
+	@Test(priority = 1, description = Testcase.TC15)
 	public void ValidLoginTC() {
 		
 		//Login Page
@@ -42,7 +42,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(explorer.SearchVal());
 	}  
 	
-	@Test(priority = 2, description = Testcase.tc16)
+	@Test(priority = 2, description = Testcase.TC16)
 	public void InvalidEmailValidPwdTC() {
 		
 		//Login Page
@@ -53,7 +53,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 3, description = Testcase.tc17)
+	@Test(priority = 3, description = Testcase.TC17)
 	public void ValidEmailinValidPwdTC() {
 		
 		//Login Page
@@ -64,7 +64,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 4, description = Testcase.tc18)
+	@Test(priority = 4, description = Testcase.TC18)
 	public void InvalidEmailInvalidPwdTC() {
 		
 		//Login Page
@@ -75,7 +75,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 5, description = Testcase.tc19)
+	@Test(priority = 5, description = Testcase.TC19)
 	public void BlankEmailValidPwdTC() {
 		
 		//Login Page
@@ -86,7 +86,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 6, description = Testcase.tc20)
+	@Test(priority = 6, description = Testcase.TC20)
 	public void ValidEmailBlankPwd() {
 		
 		//Login Page
@@ -97,7 +97,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 7, description = Testcase.tc154)
+	@Test(priority = 7, description = Testcase.TC154)
 	public void SocialFbLogin() {
 		
 		LoginPage login = new LoginPage();
@@ -111,7 +111,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(explorer.SearchVal());
 	}
 	
-	@Test(priority = 8, groups = {"smoke"}, description = Testcase.tc155)
+	@Test(priority = 8, groups = {"smoke"}, description = Testcase.TC155)
 	public void SocialGoogleLogin() {
 		
 		LoginPage login = new LoginPage();

@@ -37,7 +37,7 @@ public class TestAccount extends LaunchApp{
 	}
 		
 	
-	@Test(description = Testcase.tc115)
+	@Test(description = Testcase.TC115)
 	public void MyLawnAppSection() {
 		
 		MyAccountScreen account = new MyAccountScreen();
@@ -49,7 +49,7 @@ public class TestAccount extends LaunchApp{
 		Assert.assertTrue(store.AppTitleVal());
 	}
 	
-	@Test(description = Testcase.tc156)
+	@Test(description = Testcase.TC156)
 	public void TermsConditionsSection() {
 		
 		MyAccountScreen account = new MyAccountScreen();
@@ -58,7 +58,7 @@ public class TestAccount extends LaunchApp{
 		Assert.assertTrue(terms.TermsVal());
 	}
 	
-	@Test(description = Testcase.tc157)
+	@Test(description = Testcase.TC157)
 	public void PrivacyPolicySection() {
 		
 		MyAccountScreen account = new MyAccountScreen();

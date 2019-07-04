@@ -1,7 +1,10 @@
 package com.scotts.mygarden.page;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.scotts.mygarden.baseclass.LaunchApp;
 
@@ -27,59 +30,67 @@ public class GrowingInterests extends LaunchApp {
 	private static AndroidElement backarrow;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants for Small Spaces')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Plants for Small Spaces')]")
 	private static AndroidElement smallspacesInterest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants for Medium Spaces')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Plants for Medium Spaces')]")
 	private static AndroidElement mediumspacesInterest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants for Large Spaces')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Plants for Large Spaces')]")
 	private static AndroidElement largespacesInterest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Balcony or Patio Plants')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'BuzzFeed Nifty Projects')]")
+	private static AndroidElement buzzfeedInterest;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Indoorsy Plants')]")
+	private static AndroidElement indoorsyplants;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Balcony or Patio Plants')]")
 	private static AndroidElement balconyPatioPlants;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Outdoorsy Plants')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Outdoorsy Plants')]")
 	private static AndroidElement outdoorsyPlants;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants I Can't Kill')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Plants I Can't Kill')]")
 	private static AndroidElement plantsCantKill;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Yard to Table')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Yard to Table')]")
 	private static AndroidElement yardToTable;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Flowers and More')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Flowers and More')]")
 	private static AndroidElement flowersAndMore;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Leafy Looks')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Leafy Looks')]")
 	private static AndroidElement leafyLooks;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Share the Harvest')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Share the Harvest')]")
 	private static AndroidElement shareTheHarvest;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Plans for My Plants')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Plans for My Plants')]")
 	private static AndroidElement plansForMyPlants;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Plants to Grow Together')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Plants to Grow Together')]")
 	private static AndroidElement plantsToGrowTogether;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//*[contains(@text, 'Keep It Simple')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Keep It Simple')]")
 	private static AndroidElement keepItSimple;
 	
 	@CacheLookup
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/btn_next")
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@text, 'View plant projects for me')]")
 	private static AndroidElement viewplantbtn;
 	
 	
@@ -98,9 +109,18 @@ public class GrowingInterests extends LaunchApp {
 	
 	public static ExplorerScreen SelectInterests() {
 		
+		WebDriverWait wait = new WebDriverWait(driver,20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated
+				(By.xpath("//android.widget.TextView[contains(@text, 'Plants for Small Spaces')]")));
 		GrowingInterests.smallspacesInterest.click();
-		GrowingInterests.mediumspacesInterest.click();
-		GrowingInterests.largespacesInterest.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated
+				(By.xpath("//android.widget.TextView[contains(@text, 'BuzzFeed Nifty Projects')]")));
+		GrowingInterests.buzzfeedInterest.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated
+				(By.xpath("//android.widget.TextView[contains(@text, 'Indoorsy Plants')]")));
+		GrowingInterests.indoorsyplants.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated
+				(By.xpath("//android.widget.Button[contains(@text, 'View plant projects for me')]")));
 		GrowingInterests.viewplantbtn.click();
 		
 		return new ExplorerScreen();
@@ -109,7 +129,7 @@ public class GrowingInterests extends LaunchApp {
     public static ExplorerScreen Select3Interests() {
     	
     	driver.findElement(MobileBy.AndroidUIAutomator(
- 			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"keepItSimple\"));"));
+ 			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Keep It Simple\"));"));
 		
 		GrowingInterests.leafyLooks.click();
 		GrowingInterests.shareTheHarvest.click();

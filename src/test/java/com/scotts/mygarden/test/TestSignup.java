@@ -27,8 +27,7 @@ public class TestSignup extends LaunchApp {
 
 	}
 	
-	/*
-	@Test(description = Testcase.tc09)
+	@Test(description = Testcase.TC09)
 	public void GuestUserLink() {
 		
 		Assert.assertTrue(SignupPage.SignupValidation());
@@ -37,7 +36,7 @@ public class TestSignup extends LaunchApp {
 	
 	}
 	
-	@Test(description = Testcase.tc27)
+	@Test(description = Testcase.TC27)
 	public void GuestUserSkipInterest() {
 		
 		Assert.assertTrue(SignupPage.SignupValidation());
@@ -48,9 +47,9 @@ public class TestSignup extends LaunchApp {
 		GrowingInterests.skipInterest();
 		ExplorerScreen explorer = new ExplorerScreen();
 		Assert.assertTrue(explorer.SearchVal());		
-	} */
+	} 
 	
-	@Test(priority = 2, description = Testcase.tc28)
+	@Test(priority = 2, description = Testcase.TC28)
 	public void GuestUserInterests() {
 		
 		Assert.assertTrue(SignupPage.SignupValidation());
@@ -58,12 +57,13 @@ public class TestSignup extends LaunchApp {
 		Assert.assertTrue(Zipcode.ZipcodeVal());
 		Zipcode.zipcodeInput(proReader("code"));
 		Assert.assertTrue(GrowingInterests.InterestsVal());
-		GrowingInterests.Select3Interests();
+		GrowingInterests.SelectInterests();
 		ExplorerScreen explorer = new ExplorerScreen();
 		Assert.assertTrue(explorer.SearchVal());
-	}
+	} 
 	
-	@Test(priority = 1, description = Testcase.tc03)
+	
+	@Test(priority = 1, description = Testcase.TC03)
 	public void ValidSignUp() {
 		
 		SignupPage.ScottsSignup(proReader("signupemail"), proReader("signuppassword"));
@@ -76,8 +76,8 @@ public class TestSignup extends LaunchApp {
 
 	}
 	
-	/*
-	@Test(priority = 3, description = Testcase.tc29)
+	
+	@Test(priority = 3, description = Testcase.TC29)
 	public void GuestUserSelectLessInterests() {
 		
 		Assert.assertTrue(SignupPage.SignupValidation());
@@ -89,7 +89,7 @@ public class TestSignup extends LaunchApp {
 		Assert.assertFalse(GrowingInterests.ViewPlantBtnVal());
 	} 
 	
-	@Test(description = Testcase.tc149)
+	@Test(description = Testcase.TC149)
 	public void InvalidZipcode() {
 		
 		Assert.assertTrue(SignupPage.SignupValidation());
@@ -100,7 +100,6 @@ public class TestSignup extends LaunchApp {
 	
 	}  
 	
-	*/
 	
 	@AfterMethod(alwaysRun = true)
 	public void TearDrop() {

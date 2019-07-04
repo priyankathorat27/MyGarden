@@ -36,7 +36,7 @@ public class TestFreshTips extends LaunchApp {
 		
 	}
 	
-	@Test(description = Testcase.tc126)
+	@Test(description = Testcase.TC126)
 	public void HeroArticleData() {
 		
 		FreshTipsPage fresh = new FreshTipsPage();
@@ -47,7 +47,7 @@ public class TestFreshTips extends LaunchApp {
 		Assert.assertTrue(fresh.heroArtVal());
 	}
 	
-	@Test(description = Testcase.tc130)
+	@Test(description = Testcase.TC130)
 	public void FeedArticleData() {
 		
 		FreshTipsPage fresh = new FreshTipsPage();

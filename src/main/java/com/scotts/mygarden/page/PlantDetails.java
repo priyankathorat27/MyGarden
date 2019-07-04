@@ -83,6 +83,7 @@ public class PlantDetails extends LaunchApp{
 	public PlantDetails PrepVideo() {
 		driver.findElement(MobileBy.AndroidUIAutomator(
 	  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"See planting instructions\"));"));
+		
 		PlantDetails.video.click();
 		return new PlantDetails();
 	}

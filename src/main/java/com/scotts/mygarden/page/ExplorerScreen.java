@@ -94,6 +94,10 @@ public class ExplorerScreen extends LaunchApp {
 	@CacheLookup
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/fresh_cuts")
 	private static AndroidElement freshTips;
+	
+	@CacheLookup
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/close_button")
+	private static AndroidElement closeBtn;
 
 
    public boolean browseValidation() {

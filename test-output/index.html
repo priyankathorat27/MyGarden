@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1650328818\testng-customsuite.xml</span>
+                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse--891262152\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,31 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,  3 skipped,  </span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestSuccessPlans" class="method navigator-link" hash-for-method="ActivityCompleted">ActivityCompleted</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestSuccessPlans" class="method navigator-link" hash-for-method="AllActivitesData">AllActivitesData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestSuccessPlans" class="method navigator-link" hash-for-method="CancelDeleteSuccessPlan">CancelDeleteSuccessPlan</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -126,17 +102,12 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestSuccessPlans" class="method navigator-link" hash-for-method="DeleteSuccessPlan">DeleteSuccessPlan</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestProjectOverview" class="method navigator-link" hash-for-method="PrepPlant">PrepPlant</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestSuccessPlans" class="method navigator-link" hash-for-method="InstructionsData">InstructionsData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestSuccessPlans" class="method navigator-link" hash-for-method="ThisWeekDataVerify">ThisWeekDataVerify</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.scotts.mygarden.test.TestProjectOverview" class="method navigator-link" hash-for-method="PrepPlantvideo">PrepPlantvideo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -151,235 +122,36 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.scotts.mygarden.test.TestSuccessPlans</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ActivityCompleted">
-                  </a> <!-- ActivityCompleted -->
-                  <span class="method-name">ActivityCompleted</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at com.scotts.mygarden.page.SuccessPlan.ReadLink(SuccessPlan.java:72)
-	at com.scotts.mygarden.test.TestSuccessPlans.ActivityCompleted(TestSuccessPlans.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5e63cad (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/text_action})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-
-</div> <!-- stack-trace -->
-                  <em>
-(Success Plan Timeline_This Week)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AllActivitesData">
-                  </a> <!-- AllActivitesData -->
-                  <span class="method-name">AllActivitesData</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.support.v7.app.ActionBar$Tab[@index = &apos;1&apos;]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at com.scotts.mygarden.page.SuccessPlan.AllActivites(SuccessPlan.java:94)
-	at com.scotts.mygarden.test.TestSuccessPlans.AllActivitesData(TestSuccessPlans.java:90)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@18fdb6cf (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.support.v7.app.ActionBar$Tab[@index = &apos;1&apos;]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-
-</div> <!-- stack-trace -->
-                  <em>
-(Verify the data when user go to  All Activities tab under selected care plan)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CancelDeleteSuccessPlan">
-                  </a> <!-- CancelDeleteSuccessPlan -->
-                  <span class="method-name">CancelDeleteSuccessPlan</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[contains(@text, &apos;Delete This Success Plan&apos;)]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at com.scotts.mygarden.page.SuccessPlan.CancelDeletePlan(SuccessPlan.java:79)
-	at com.scotts.mygarden.test.TestSuccessPlans.CancelDeleteSuccessPlan(TestSuccessPlans.java:73)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@51ec2df1 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[contains(@text, &apos;Delete This Success Plan&apos;)]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-
-</div> <!-- stack-trace -->
-                  <em>
-(Verify the functionality when user click on cancel button while deleting the success plan)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.scotts.mygarden.test.TestSuccessPlans</span>
+              <span class="class-name">com.scotts.mygarden.test.TestProjectOverview</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteSuccessPlan">
-                  </a> <!-- DeleteSuccessPlan -->
-                  <span class="method-name">DeleteSuccessPlan</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/my_care_plans})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at com.scotts.mygarden.page.ExplorerScreen.GardenTab(ExplorerScreen.java:184)
-	at com.scotts.mygarden.test.TestSuccessPlans.Setup(TestSuccessPlans.java:33)
+                  <a name="PrepPlant">
+                  </a> <!-- PrepPlant -->
+                  <span class="method-name">PrepPlant</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Original error: unexpected end of stream on Connection{0.0.0.0:4723, proxy=DIRECT hostAddress=/0.0.0.0:4723 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:95)
+	at com.scotts.mygarden.baseclass.LaunchApp.AppInitialize(LaunchApp.java:52)
+	at com.scotts.mygarden.test.TestProjectOverview.Setup(TestProjectOverview.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -408,49 +180,71 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@9d1a267 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 32 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/my_care_plans})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 34 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 42 more
+Caused by: java.io.IOException: unexpected end of stream on Connection{0.0.0.0:4723, proxy=DIRECT hostAddress=/0.0.0.0:4723 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:208)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	... 47 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:237)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 67 more
 
 </div> <!-- stack-trace -->
                   <em>
-(Verify the functionality when user click on delete button while deleting the success plan)                  </em>
+(Verify the data when user click on see plan instruction link under prep & plant section)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="InstructionsData">
-                  </a> <!-- InstructionsData -->
-                  <span class="method-name">InstructionsData</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/my_care_plans})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at com.scotts.mygarden.page.ExplorerScreen.GardenTab(ExplorerScreen.java:184)
-	at com.scotts.mygarden.test.TestSuccessPlans.Setup(TestSuccessPlans.java:33)
+                  <a name="PrepPlantvideo">
+                  </a> <!-- PrepPlantvideo -->
+                  <span class="method-name">PrepPlantvideo</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Original error: unexpected end of stream on Connection{0.0.0.0:4723, proxy=DIRECT hostAddress=/0.0.0.0:4723 cipherSuite=none protocol=http/1.1}
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:95)
+	at com.scotts.mygarden.baseclass.LaunchApp.AppInitialize(LaunchApp.java:52)
+	at com.scotts.mygarden.test.TestProjectOverview.Setup(TestProjectOverview.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -479,107 +273,45 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@9d1a267 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 32 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/my_care_plans})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 34 more
-
-</div> <!-- stack-trace -->
-                  <em>
-(Verify the data under read more about it)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ThisWeekDataVerify">
-                  </a> <!-- ThisWeekDataVerify -->
-                  <span class="method-name">ThisWeekDataVerify</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/my_care_plans})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
-	at com.scotts.mygarden.page.ExplorerScreen.GardenTab(ExplorerScreen.java:184)
-	at com.scotts.mygarden.test.TestSuccessPlans.Setup(TestSuccessPlans.java:33)
+Caused by: java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@9d1a267 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 32 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/my_care_plans})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 34 more
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 42 more
+Caused by: java.io.IOException: unexpected end of stream on Connection{0.0.0.0:4723, proxy=DIRECT hostAddress=/0.0.0.0:4723 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:208)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	... 47 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:237)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 67 more
 
 </div> <!-- stack-trace -->
                   <em>
-(Verify the data under This Week section under Success Plan timeline)                  </em>
+(Verify the data under Prep & Plant  section)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -587,7 +319,7 @@ Driver info: driver.version: AndroidDriver
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1650328818\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse--891262152\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -596,7 +328,7 @@ Driver info: driver.version: AndroidDriver
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.scotts.mygarden.test.TestSuccessPlans&quot;/&gt;
+      &lt;class name=&quot;com.scotts.mygarden.test.TestProjectOverview&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -636,36 +368,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CancelDeleteSuccessPlan')
-data.setCell(0, 2, 'com.scotts.mygarden.test.TestSuccessPlans')
-data.setCell(0, 3, 32066);
+data.setCell(0, 1, 'PrepPlantvideo')
+data.setCell(0, 2, 'com.scotts.mygarden.test.TestProjectOverview')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ActivityCompleted')
-data.setCell(1, 2, 'com.scotts.mygarden.test.TestSuccessPlans')
-data.setCell(1, 3, 30241);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AllActivitesData')
-data.setCell(2, 2, 'com.scotts.mygarden.test.TestSuccessPlans')
-data.setCell(2, 3, 1847);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'DeleteSuccessPlan')
-data.setCell(3, 2, 'com.scotts.mygarden.test.TestSuccessPlans')
-data.setCell(3, 3, 0);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'InstructionsData')
-data.setCell(4, 2, 'com.scotts.mygarden.test.TestSuccessPlans')
-data.setCell(4, 3, 0);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ThisWeekDataVerify')
-data.setCell(5, 2, 'com.scotts.mygarden.test.TestSuccessPlans')
-data.setCell(5, 3, 0);
+data.setCell(1, 1, 'PrepPlant')
+data.setCell(1, 2, 'com.scotts.mygarden.test.TestProjectOverview')
+data.setCell(1, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -691,86 +407,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.scotts.mygarden.test.TestSuccessPlans</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.scotts.mygarden.test.TestProjectOverview</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ActivityCompleted</span>
-                <span class="method-start">47653 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDrop</span>
-                <span class="method-start">77905 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">80613 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">AllActivitesData</span>
-                <span class="method-start">127520 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDrop</span>
-                <span class="method-start">129374 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">132104 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">CancelDeleteSuccessPlan</span>
-                <span class="method-start">177978 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDrop</span>
-                <span class="method-start">210053 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Setup</span>
-                <span class="method-start">212876 ms</span>
+                <span class="method-start">601183 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDrop</span>
-                <span class="method-start">283082 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">285849 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDrop</span>
-                <span class="method-start">336414 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Setup</span>
-                <span class="method-start">339107 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDrop</span>
-                <span class="method-start">387740 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">DeleteSuccessPlan</span>
-                <span class="method-start">-1561726857368 ms</span>
+                <span class="method-name">PrepPlant</span>
+                <span class="method-start">-1562243245693 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">InstructionsData</span>
-                <span class="method-start">-1561726857368 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ThisWeekDataVerify</span>
-                <span class="method-start">-1561726857368 ms</span>
+                <span class="method-name">PrepPlantvideo</span>
+                <span class="method-start">-1562243245693 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
