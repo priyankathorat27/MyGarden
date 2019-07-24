@@ -80,8 +80,8 @@ public class ExplorerScreen extends LaunchApp {
 	private static AndroidElement browsebycategory;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Bee Balm')]/preceding-sibling::android.widget.FrameLayout")
-	private static AndroidElement beeBalmLink;
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Air-Purifying Plants')]/preceding-sibling::android.widget.FrameLayout")
+	private static AndroidElement airPlantsLink;
 	
 	@CacheLookup
 	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Aloe vera')]/preceding-sibling::android.widget.FrameLayout")
@@ -169,16 +169,17 @@ public class ExplorerScreen extends LaunchApp {
    
    public PlantDetails selectPlan() {
 	   
+	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bee Balm\"));"));
-	   ExplorerScreen.beeBalmLink.click();
+  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air-Purifying Plants\"));"));
+	   ExplorerScreen.airPlantsLink.click();
 	   return new PlantDetails();
    }
    
    public PlantDetails selectExistingPlan() {
 	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aloe vera\"));"));
+  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aloe //vera\"));"));
 	   ExplorerScreen.aloeVeraLink.click();
 	   return new PlantDetails();
    }

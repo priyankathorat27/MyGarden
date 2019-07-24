@@ -109,7 +109,7 @@ public class GrowingInterests extends LaunchApp {
 	
 	public static ExplorerScreen SelectInterests() {
 		
-		WebDriverWait wait = new WebDriverWait(driver,20);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated
 				(By.xpath("//android.widget.TextView[contains(@text, 'Plants for Small Spaces')]")));
 		GrowingInterests.smallspacesInterest.click();

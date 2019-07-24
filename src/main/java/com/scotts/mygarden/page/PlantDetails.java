@@ -35,7 +35,8 @@ public class PlantDetails extends LaunchApp{
 	private static AndroidElement instructionsLink; 
 	
 	@CacheLookup
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/video_image")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ImageView[2]")
+	//(xpath = "//android.widget.ImageView[@index = '1']")
 	private static AndroidElement video;
 	
 	@CacheLookup
@@ -69,7 +70,7 @@ public class PlantDetails extends LaunchApp{
 	
 	public boolean WhatYouNeedVal() {
 		
-		return PlantDetails.starterPlant.isDisplayed() || PlantDetails.gloves.isDisplayed();
+		return PlantDetails.gloves.isDisplayed();
 	}
 	
 	public SuppliesPage NonEssentialSupplies() {

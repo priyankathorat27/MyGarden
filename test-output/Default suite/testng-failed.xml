@@ -5,9 +5,8 @@
     <classes>
       <class name="com.scotts.mygarden.test.TestProjectOverview">
         <methods>
-          <include name="PrepPlant"/>
           <include name="Setup"/>
-          <include name="PrepPlantvideo"/>
+          <include name="WhatYouNeedSection"/>
         </methods>
       </class> <!-- com.scotts.mygarden.test.TestProjectOverview -->
     </classes>
