@@ -72,7 +72,7 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(prep.PrepCloseBtnVal());
 		prep.PrepClose();
 	}
-	/*
+	
 	@Test(description = Testcase.TC77)
 	public void NewSetupPlan() {
 		
@@ -82,6 +82,6 @@ public class TestProjectOverview extends LaunchApp{
 		MyGardenPage garden = new MyGardenPage();
 		Assert.assertTrue(garden.MyGardenVal());
 	}
-	*/
+	
 
 }
