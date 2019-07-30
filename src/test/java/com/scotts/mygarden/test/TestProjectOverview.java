@@ -73,7 +73,7 @@ public class TestProjectOverview extends LaunchApp{
 		prep.PrepClose();
 	}
 	
-	@Test(description = Testcase.TC77)
+	@Test(groups = {"smoke", "regression"}, description = Testcase.TC77)
 	public void NewSetupPlan() {
 		
 		

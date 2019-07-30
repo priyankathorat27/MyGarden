@@ -26,6 +26,10 @@ public class MyGardenPage extends LaunchApp{
 	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Bee Balm')]")
 	private static AndroidElement beeBalmProject;
 	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Air-Purifying Plants')]")
+	private static AndroidElement airPurifyingPlantProject;
+	
 	
 	public boolean MyGardenVal() {
 		
@@ -40,5 +44,12 @@ public class MyGardenPage extends LaunchApp{
 		return new SuccessPlan();
 	}
 	
+    public SuccessPlan AirPlantsProject() {
+		
+		driver.findElement(MobileBy.AndroidUIAutomator(
+	  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air-Purifying Plants\"));"));
+		MyGardenPage.airPurifyingPlantProject.click();
+		return new SuccessPlan();
+	}
 
 }

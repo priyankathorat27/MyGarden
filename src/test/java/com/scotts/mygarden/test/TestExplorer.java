@@ -31,7 +31,7 @@ public class TestExplorer extends LaunchApp {
 	}
 	
 	
-	@Test(priority = 1, description = Testcase.TC46)
+	@Test(groups = {"smoke"}, priority = 1, description = Testcase.TC46)
 	public void Edibles() {
 		
 		ExplorerScreen explorer = new ExplorerScreen();
@@ -39,7 +39,7 @@ public class TestExplorer extends LaunchApp {
 		Assert.assertTrue(explorer.browseValidation());
 	}
 	
-	@Test(priority = 2, description = Testcase.TC150)
+	@Test(groups = {"smoke"}, priority = 2, description = Testcase.TC150)
 	public void Decoratives() {
 		
 		ExplorerScreen explorer = new ExplorerScreen();
@@ -48,7 +48,7 @@ public class TestExplorer extends LaunchApp {
 		
 	}
 	
-	@Test(priority = 3, description = Testcase.TC151)
+	@Test(groups = {"smoke"}, priority = 3, description = Testcase.TC151)
 	public void Pests() {
 		
 		ExplorerScreen explorer = new ExplorerScreen();
@@ -56,7 +56,7 @@ public class TestExplorer extends LaunchApp {
 		Assert.assertTrue(explorer.browseValidation());
 	}
 	
-	@Test(priority = 4, description = Testcase.TC152)
+	@Test(groups = {"smoke"}, priority = 4, description = Testcase.TC152)
 	public void Weeds() {
 		
 		ExplorerScreen explorer = new ExplorerScreen();
@@ -64,7 +64,7 @@ public class TestExplorer extends LaunchApp {
 		Assert.assertTrue(explorer.browseValidation());
 	}
 	
-	@Test(priority = 5, description = Testcase.TC153)
+	@Test(groups = {"smoke"}, priority = 5, description = Testcase.TC153)
 	public void Diseases() {
 		
 		ExplorerScreen explorer = new ExplorerScreen();
@@ -72,7 +72,7 @@ public class TestExplorer extends LaunchApp {
 		Assert.assertTrue(explorer.browseValidation());
 	}
 	
-	@Test(description = Testcase.TC78, groups = {"smoke"})
+	@Test(description = Testcase.TC78, groups = {"regression"})
 	public void ExistingPlan() {
 		
 		ExplorerScreen explorer = new ExplorerScreen();

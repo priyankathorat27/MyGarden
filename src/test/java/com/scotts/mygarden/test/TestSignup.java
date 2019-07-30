@@ -49,7 +49,7 @@ public class TestSignup extends LaunchApp {
 		Assert.assertTrue(explorer.SearchVal());		
 	} 
 	
-	@Test(priority = 2, description = Testcase.TC28)
+	@Test(groups = {"regression"}, priority = 2, description = Testcase.TC28)
 	public void GuestUserInterests() {
 		
 		Assert.assertTrue(SignupPage.SignupValidation());
@@ -63,7 +63,7 @@ public class TestSignup extends LaunchApp {
 	} 
 	
 	
-	@Test(priority = 1, description = Testcase.TC03)
+	@Test(groups = {"smoke", "regression"}, priority = 1, description = Testcase.TC03)
 	public void ValidSignUp() {
 		
 		SignupPage.ScottsSignup(proReader("signupemail"), proReader("signuppassword"));

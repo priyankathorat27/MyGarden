@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-24T12:30:08Z" name="Default suite" finished-at="2019-07-24T12:31:06Z" duration-ms="58191">
+  <suite started-at="2019-07-26T10:05:26Z" name="Default suite" finished-at="2019-07-26T10:06:21Z" duration-ms="55357">
     <groups>
     </groups>
-    <test started-at="2019-07-24T12:30:08Z" name="Default test" finished-at="2019-07-24T12:31:06Z" duration-ms="58191">
-      <class name="com.scotts.mygarden.test.TestProjectOverview">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@1cbb87f3]" started-at="2019-07-24T12:30:08Z" name="Setup" finished-at="2019-07-24T12:31:00Z" duration-ms="51851" status="PASS">
+    <test started-at="2019-07-26T10:05:26Z" name="Default test" finished-at="2019-07-26T10:06:21Z" duration-ms="55357">
+      <class name="com.scotts.mygarden.test.TestSuccessPlans">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@6631f5ca]" started-at="2019-07-26T10:05:26Z" name="Setup" finished-at="2019-07-26T10:06:14Z" duration-ms="48294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="WhatYouNeedSection()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@1cbb87f3]" started-at="2019-07-24T12:31:00Z" name="WhatYouNeedSection" description="Verify the data under &#039;What you need&#039; section" finished-at="2019-07-24T12:31:06Z" duration-ms="6308" status="PASS">
+        <test-method signature="AllActivitesData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@6631f5ca]" started-at="2019-07-26T10:06:14Z" name="AllActivitesData" description="Verify the data when user go to  All Activities tab under selected care plan" finished-at="2019-07-26T10:06:18Z" duration-ms="4276" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WhatYouNeedSection -->
-      </class> <!-- com.scotts.mygarden.test.TestProjectOverview -->
+        </test-method> <!-- AllActivitesData -->
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@6631f5ca]" started-at="2019-07-26T10:06:18Z" name="TearDrop" finished-at="2019-07-26T10:06:21Z" duration-ms="2750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDrop -->
+      </class> <!-- com.scotts.mygarden.test.TestSuccessPlans -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
