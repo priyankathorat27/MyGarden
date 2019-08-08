@@ -33,7 +33,7 @@ public class TestProjectOverview extends LaunchApp{
 		explorer.selectPlan();
 	}
 	
-	@Test(description = Testcase.TC62)
+	@Test(groups = {"smoke"}, description = Testcase.TC62)
 	public void WhatYouNeedSection() {
 		
 		PlantDetails details = new PlantDetails();
@@ -41,7 +41,7 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(details.WhatYouNeedVal());
 	}
 	
-	@Test(description = Testcase.TC63)
+	@Test(groups = {"smoke"}, description = Testcase.TC63)
 	public void Supplies() {
 		
 		PlantDetails details = new PlantDetails();
@@ -51,7 +51,7 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(sup.NonEssentials());
 	} 
 	
-	@Test(description = Testcase.TC64)
+	@Test(groups = {"smoke"}, description = Testcase.TC64)
 	public void PrepPlantvideo() {
 		
 		PlantDetails details = new PlantDetails();
@@ -61,7 +61,7 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(details.PlantingInstructions());
 	} 
 		
-	@Test(description = Testcase.TC72)
+	@Test(groups = {"smoke"}, description = Testcase.TC72)
 	public void PrepPlant() {
 		
 		PlantDetails details = new PlantDetails();
@@ -73,7 +73,7 @@ public class TestProjectOverview extends LaunchApp{
 		prep.PrepClose();
 	}
 	
-	@Test(groups = {"smoke", "regression"}, description = Testcase.TC77)
+	@Test(groups = {"smoke", "regression"}, priority = 3,  description = Testcase.TC77)
 	public void NewSetupPlan() {
 		
 		
@@ -83,5 +83,14 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(garden.MyGardenVal());
 	}
 	
+	@Test(description = Testcase.TC78, groups = {"regression"}, priority = 4)
+	public void ExistingPlan() {
+		
+		PlantDetails details = new PlantDetails();
+		Assert.assertTrue(details.headerVal());
+		details.existingSetupPlan();
+		Assert.assertTrue(details.headerVal());
+		
+	}
 
 }

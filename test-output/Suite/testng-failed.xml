@@ -8,13 +8,14 @@
       </run>
     </groups>
     <classes>
-      <class name="com.scotts.mygarden.test.TestExplorer">
+      <class name="com.scotts.mygarden.test.TestSuccessPlans">
         <methods>
+          <include name="ActivityCompleted"/>
           <include name="TearDrop"/>
+          <include name="InstructionsData"/>
           <include name="Setup"/>
-          <include name="ExistingPlan"/>
         </methods>
-      </class> <!-- com.scotts.mygarden.test.TestExplorer -->
+      </class> <!-- com.scotts.mygarden.test.TestSuccessPlans -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

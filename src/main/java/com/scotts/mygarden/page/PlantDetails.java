@@ -48,7 +48,7 @@ public class PlantDetails extends LaunchApp{
 	private static AndroidElement addToMyGardenBtn;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Aloe vera')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Air-Purifying Plants')]")
 	private static AndroidElement header;
 	
 	@CacheLookup

@@ -97,7 +97,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(groups = {"regression"}, priority = 7, description = Testcase.TC154)
+	@Test(groups = {"smoke","regression"}, priority = 1, description = Testcase.TC154)
 	public void SocialFbLogin() {
 		
 		LoginPage login = new LoginPage();
@@ -111,7 +111,7 @@ public class TestLogin extends LaunchApp {
 		Assert.assertTrue(explorer.SearchVal());
 	}
 	
-	@Test(groups = {"regression"}, priority = 8, description = Testcase.TC155)
+	@Test(groups = {"smoke","regression"}, priority = 1, description = Testcase.TC155)
 	public void SocialGoogleLogin() {
 		
 		LoginPage login = new LoginPage();

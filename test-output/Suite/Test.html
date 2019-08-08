@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 27 12:40:21 IST 2019</td>
+<td>Started on:</td><td>Fri Aug 02 18:10:15 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>92 seconds (92367 ms)</td>
+<tr><td>Total time:</td><td>1357 seconds (1357310 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke </td>
 </tr><tr>
@@ -67,6 +67,204 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestSuccessPlans.ActivityCompleted()'><b>ActivityCompleted</b><br>Test class: com.scotts.mygarden.test.TestSuccessPlans<br>Test method: Success Plan Timeline_This Week</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at com.scotts.mygarden.page.SuccessPlan.ReadLink(SuccessPlan.java:79)
+	at com.scotts.mygarden.test.TestSuccessPlans.ActivityCompleted(TestSuccessPlans.java:52)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@514377fc (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace567921924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace567921924'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at com.scotts.mygarden.page.SuccessPlan.ReadLink(SuccessPlan.java:79)
+	at com.scotts.mygarden.test.TestSuccessPlans.ActivityCompleted(TestSuccessPlans.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@514377fc (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+</pre></div></td>
+<td>30</td>
+<td>com.scotts.mygarden.test.TestSuccessPlans@37654521</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestSuccessPlans.InstructionsData()'><b>InstructionsData</b><br>Test class: com.scotts.mygarden.test.TestSuccessPlans<br>Test method: Verify the data under read more about it</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at com.scotts.mygarden.page.SuccessPlan.ReadLink(SuccessPlan.java:79)
+	at com.scotts.mygarden.test.TestSuccessPlans.InstructionsData(TestSuccessPlans.java:64)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@47f04e4d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767312012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767312012'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(&lt;generated&gt;)
+	at com.scotts.mygarden.page.SuccessPlan.ReadLink(SuccessPlan.java:79)
+	at com.scotts.mygarden.test.TestSuccessPlans.InstructionsData(TestSuccessPlans.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@47f04e4d (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 29 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/text_action})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3OLENNV&apos;, ip: &apos;10.15.2.157&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+</pre></div></td>
+<td>30</td>
+<td>com.scotts.mygarden.test.TestSuccessPlans@37654521</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,15 +273,95 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.scotts.mygarden.test.TestExplorer.ExistingPlan()'><b>ExistingPlan</b><br>Test class: com.scotts.mygarden.test.TestExplorer<br>Test method: Verify the functionality when user click set up a existing plan</td>
+<td title='com.scotts.mygarden.test.TestSuccessPlans.AllActivitesData()'><b>AllActivitesData</b><br>Test class: com.scotts.mygarden.test.TestSuccessPlans<br>Test method: Verify the data when user go to  All Activities tab under selected care plan</td>
 <td></td>
-<td>13</td>
-<td>com.scotts.mygarden.test.TestExplorer@10feca44</td></tr>
+<td>4</td>
+<td>com.scotts.mygarden.test.TestSuccessPlans@37654521</td></tr>
 <tr>
-<td title='com.scotts.mygarden.test.TestLogin.SocialGoogleLogin()'><b>SocialGoogleLogin</b><br>Test class: com.scotts.mygarden.test.TestLogin<br>Test method: Verify login functionality of existing social media account - using Google.</td>
+<td title='com.scotts.mygarden.test.TestSuccessPlans.CancelDeleteSuccessPlan()'><b>CancelDeleteSuccessPlan</b><br>Test class: com.scotts.mygarden.test.TestSuccessPlans<br>Test method: Verify the functionality when user click on cancel button while deleting the success plan</td>
 <td></td>
-<td>13</td>
-<td>com.scotts.mygarden.test.TestLogin@24fcf36f</td></tr>
+<td>6</td>
+<td>com.scotts.mygarden.test.TestSuccessPlans@37654521</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestExplorer.Decoratives()'><b>Decoratives</b><br>Test class: com.scotts.mygarden.test.TestExplorer<br>Test method: Verify the data on the page of Decoratives screen</td>
+<td></td>
+<td>33</td>
+<td>com.scotts.mygarden.test.TestExplorer@793be5ca</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestSuccessPlans.DeleteSuccessPlan()'><b>DeleteSuccessPlan</b><br>Test class: com.scotts.mygarden.test.TestSuccessPlans<br>Test method: Verify the functionality when user click on delete button while deleting the success plan</td>
+<td></td>
+<td>7</td>
+<td>com.scotts.mygarden.test.TestSuccessPlans@37654521</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestExplorer.Diseases()'><b>Diseases</b><br>Test class: com.scotts.mygarden.test.TestExplorer<br>Test method: Verify the data on the page of Diseases screen</td>
+<td></td>
+<td>30</td>
+<td>com.scotts.mygarden.test.TestExplorer@793be5ca</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestExplorer.Edibles()'><b>Edibles</b><br>Test class: com.scotts.mygarden.test.TestExplorer<br>Test method: Verify the data on the page of edibles screen</td>
+<td></td>
+<td>32</td>
+<td>com.scotts.mygarden.test.TestExplorer@793be5ca</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestFreshTips.FeedArticleData()'><b>FeedArticleData</b><br>Test class: com.scotts.mygarden.test.TestFreshTips<br>Test method: Verify the data when user taps on Feed posts article</td>
+<td></td>
+<td>27</td>
+<td>com.scotts.mygarden.test.TestFreshTips@33990a0c</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestFreshTips.HeroArticleData()'><b>HeroArticleData</b><br>Test class: com.scotts.mygarden.test.TestFreshTips<br>Test method: Verify the data under Hero article section</td>
+<td></td>
+<td>6</td>
+<td>com.scotts.mygarden.test.TestFreshTips@33990a0c</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestAccount.MyLawnAppSection()'><b>MyLawnAppSection</b><br>Test class: com.scotts.mygarden.test.TestAccount<br>Test method: Verify the functionality when user clicks on Download my lawn app</td>
+<td></td>
+<td>10</td>
+<td>com.scotts.mygarden.test.TestAccount@15aab8c6</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestProjectOverview.NewSetupPlan()'><b>NewSetupPlan</b><br>Test class: com.scotts.mygarden.test.TestProjectOverview<br>Test method: Verify the functionality when user click set up a new plan</td>
+<td></td>
+<td>8</td>
+<td>com.scotts.mygarden.test.TestProjectOverview@2df9b86</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestExplorer.Pests()'><b>Pests</b><br>Test class: com.scotts.mygarden.test.TestExplorer<br>Test method: Verify the data on the page of Pests screen</td>
+<td></td>
+<td>29</td>
+<td>com.scotts.mygarden.test.TestExplorer@793be5ca</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestProjectOverview.PrepPlant()'><b>PrepPlant</b><br>Test class: com.scotts.mygarden.test.TestProjectOverview<br>Test method: Verify the data when user click on see plan instruction link under prep & plant section</td>
+<td></td>
+<td>21</td>
+<td>com.scotts.mygarden.test.TestProjectOverview@2df9b86</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestProjectOverview.PrepPlantvideo()'><b>PrepPlantvideo</b><br>Test class: com.scotts.mygarden.test.TestProjectOverview<br>Test method: Verify the data under Prep & Plant  section</td>
+<td></td>
+<td>11</td>
+<td>com.scotts.mygarden.test.TestProjectOverview@2df9b86</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestAccount.PrivacyPolicySection()'><b>PrivacyPolicySection</b><br>Test class: com.scotts.mygarden.test.TestAccount<br>Test method: Verify the functionality when user clicks on Privacy Policy</td>
+<td></td>
+<td>12</td>
+<td>com.scotts.mygarden.test.TestAccount@15aab8c6</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestProjectOverview.Supplies()'><b>Supplies</b><br>Test class: com.scotts.mygarden.test.TestProjectOverview<br>Test method: Verify the data of 'Non- Essential Supplies' section</td>
+<td></td>
+<td>7</td>
+<td>com.scotts.mygarden.test.TestProjectOverview@2df9b86</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestAccount.TermsConditionsSection()'><b>TermsConditionsSection</b><br>Test class: com.scotts.mygarden.test.TestAccount<br>Test method: Verify the functionality when user clicks on Terms and Condition</td>
+<td></td>
+<td>6</td>
+<td>com.scotts.mygarden.test.TestAccount@15aab8c6</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestExplorer.Weeds()'><b>Weeds</b><br>Test class: com.scotts.mygarden.test.TestExplorer<br>Test method: Verify the data on the page of Weeds screen</td>
+<td></td>
+<td>30</td>
+<td>com.scotts.mygarden.test.TestExplorer@793be5ca</td></tr>
+<tr>
+<td title='com.scotts.mygarden.test.TestProjectOverview.WhatYouNeedSection()'><b>WhatYouNeedSection</b><br>Test class: com.scotts.mygarden.test.TestProjectOverview<br>Test method: Verify the data under 'What you need' section</td>
+<td></td>
+<td>7</td>
+<td>com.scotts.mygarden.test.TestProjectOverview@2df9b86</td></tr>
 </table><p>
 </body>
 </html>

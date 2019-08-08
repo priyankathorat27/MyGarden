@@ -36,7 +36,7 @@ public class TestSignup extends LaunchApp {
 	
 	}
 	
-	@Test(description = Testcase.TC27)
+	@Test(groups = {"smoke"}, description = Testcase.TC27)
 	public void GuestUserSkipInterest() {
 		
 		Assert.assertTrue(SignupPage.SignupValidation());
@@ -63,7 +63,7 @@ public class TestSignup extends LaunchApp {
 	} 
 	
 	
-	@Test(groups = {"smoke", "regression"}, priority = 1, description = Testcase.TC03)
+	@Test(groups = {"smoke", "regression"}, priority = 2, description = Testcase.TC03)
 	public void ValidSignUp() {
 		
 		SignupPage.ScottsSignup(proReader("signupemail"), proReader("signuppassword"));

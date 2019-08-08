@@ -12,8 +12,7 @@
   
     <classes>
     
-      <class name = "com.scotts.mygarden.test.TestLogin"/>
-      <class name = "com.scotts.mygarden.test.TestSignup"/>
+      
       <class name = "com.scotts.mygarden.test.TestExplorer"/>
       <class name = "com.scotts.mygarden.test.TestProjectOverview"/>
       <class name = "com.scotts.mygarden.test.TestSuccessPlans"/>

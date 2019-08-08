@@ -37,7 +37,7 @@ public class TestSuccessPlans extends LaunchApp {
 	}
 	
 	
-	@Test(priority = 1, description = Testcase.TC89)
+	@Test(description = Testcase.TC89)
 	public void ThisWeekDataVerify() {
 		
 		SuccessPlan plan = new SuccessPlan();
@@ -45,7 +45,7 @@ public class TestSuccessPlans extends LaunchApp {
 	}
 	
 	
-	@Test(groups = {"smoke", "regression"}, priority = 3, description = Testcase.TC90)
+	@Test(groups = {"smoke", "regression"}, priority = 5, description = Testcase.TC90)
 	public void ActivityCompleted() {
 		
 		SuccessPlan plan = new SuccessPlan();
@@ -57,7 +57,7 @@ public class TestSuccessPlans extends LaunchApp {
 		Assert.assertTrue(plan.ThisWeekVal());
 	}
 	
-	@Test(priority = 2, description = Testcase.TC92)
+	@Test(groups = {"smoke"}, description = Testcase.TC92)
 	public void InstructionsData() {
 		
 		SuccessPlan plan = new SuccessPlan();
@@ -67,7 +67,7 @@ public class TestSuccessPlans extends LaunchApp {
 		Assert.assertTrue(read.InstructionDataVal());
 	}
 	
-	@Test(description = Testcase.TC97)
+	@Test(groups = {"smoke"}, description = Testcase.TC97)
 	public void CancelDeleteSuccessPlan() {
 		
 		SuccessPlan plan = new SuccessPlan();
@@ -75,7 +75,7 @@ public class TestSuccessPlans extends LaunchApp {
 		Assert.assertTrue(plan.ThisWeekVal());
 	}
 	
-	@Test(groups = {"smoke", "regression"}, description = Testcase.TC98)
+	@Test(groups = {"smoke", "regression"}, priority = 6, description = Testcase.TC98)
 	public void DeleteSuccessPlan() {
 		
 		SuccessPlan plan = new SuccessPlan();
@@ -86,7 +86,7 @@ public class TestSuccessPlans extends LaunchApp {
 		Assert.assertTrue(garden.MyGardenVal());
 	}
 	
-	@Test(description = Testcase.TC99)
+	@Test(groups = {"smoke"}, description = Testcase.TC99)
 	public void AllActivitesData() {
 		
 		SuccessPlan plan = new SuccessPlan();
