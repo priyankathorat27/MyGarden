@@ -38,4 +38,5 @@ public interface Testcase {
 	String TC155 = "Verify login functionality of existing social media account - using Google.";
 	String TC156 = "Verify the functionality when user clicks on Terms and Condition";
 	String TC157 = "Verify the functionality when user clicks on Privacy Policy";
+	String TC158 = "Verify the functionality of Logout button";
 }

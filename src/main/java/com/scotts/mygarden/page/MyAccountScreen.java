@@ -36,34 +36,56 @@ public class MyAccountScreen extends LaunchApp {
 	
 	public MyLawnPage MyLawnApp() {
 		
+//		driver.findElement(MobileBy.AndroidUIAutomator(
+//				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"My Lawn App\"));"));
+		
 		driver.findElement(MobileBy.AndroidUIAutomator(
-				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"My Lawn App\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"My Lawn App\"));"));
+		
 		MyAccountScreen.LawnApp.click();
 		return new MyLawnPage();
 	}
 	
 	public HomePage logout() {
 		
+//		driver.findElement(MobileBy.AndroidUIAutomator(
+//				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Log Out\"));"));
+		
 		driver.findElement(MobileBy.AndroidUIAutomator(
-				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Log Out\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Log Out\"));"));
+		
 		MyAccountScreen.logoutbtn.click();
 		return new HomePage();
 	}
 	
 	public TermsPage TermsAndConditions() {
 		
+//		driver.findElement(MobileBy.AndroidUIAutomator(
+//				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Terms and Condition\"));"));
+		
 		driver.findElement(MobileBy.AndroidUIAutomator(
-				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Terms and Condition\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Terms and Condition\"));"));
+		
 		MyAccountScreen.termsLink.click();
 		return new TermsPage();
 	}
 	
 	public PrivacyPolicyPage PrivacyPolicyLink() {
 		
+//		driver.findElement(MobileBy.AndroidUIAutomator(
+//				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Privacy Policy\"));"));
+		
 		driver.findElement(MobileBy.AndroidUIAutomator(
-				   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Privacy Policy\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Privacy Policy\"));"));
+		
 		MyAccountScreen.privacyLink.click();
 		return new PrivacyPolicyPage();
 	}
+	
+	
 
 }

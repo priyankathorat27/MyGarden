@@ -23,27 +23,27 @@ public class LoginPage extends LaunchApp {
 	private static AndroidElement loginTitle;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Email')]")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]")
 	private static AndroidElement loginEmail;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Password')]")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]")
 	private static AndroidElement loginPassword;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'LOG IN')]")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View[7]/android.widget.Button")
 	private static AndroidElement loginbtn;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'Facebook Facebook')]")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button")
 	private static AndroidElement fbLogin;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'Google Google')]")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button")
 	private static AndroidElement googleLogin;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'Forgot Password?')]")
+	@AndroidFindBy(xpath = "//android.view.View[contains(@text, 'Forgot Password?')]")
 	private static AndroidElement forgotpasswordlink;
 
 	public boolean LoginValidation() {

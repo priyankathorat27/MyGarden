@@ -23,6 +23,10 @@ public class HomePage extends LaunchApp {
 	@CacheLookup
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/btn_login")
 	private static AndroidElement loginlink;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ImageView")
+	private static AndroidElement myGardenTitle;
 
 	
 	public LoginPage LoginLink() {
@@ -36,6 +40,12 @@ public class HomePage extends LaunchApp {
 		
 		HomePage.getStarted.click();
 		return new SignupPage();
+		
+	}
+	
+	public boolean myGardenTitleVal() {
+		
+		return HomePage.myGardenTitle.isDisplayed();
 	}
 
 

@@ -1,398 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="22" passed="18" failed="2" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-02T12:40:15Z" name="Suite" finished-at="2019-08-02T13:02:53Z" duration-ms="1357310">
+  <suite started-at="2019-08-20T12:45:34Z" name="Default suite" finished-at="2019-08-20T12:51:30Z" duration-ms="355638">
     <groups>
       <group name="regression">
-        <method signature="TestProjectOverview.NewSetupPlan()[pri:3, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" name="NewSetupPlan" class="com.scotts.mygarden.test.TestProjectOverview"/>
-        <method signature="TestSuccessPlans.ActivityCompleted()[pri:5, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" name="ActivityCompleted" class="com.scotts.mygarden.test.TestSuccessPlans"/>
-        <method signature="TestSuccessPlans.DeleteSuccessPlan()[pri:6, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" name="DeleteSuccessPlan" class="com.scotts.mygarden.test.TestSuccessPlans"/>
+        <method signature="TestSuccessPlans.ActivityCompleted()[pri:5, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" name="ActivityCompleted" class="com.scotts.mygarden.test.TestSuccessPlans"/>
+        <method signature="TestSuccessPlans.DeleteSuccessPlan()[pri:6, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" name="DeleteSuccessPlan" class="com.scotts.mygarden.test.TestSuccessPlans"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="TestAccount.MyLawnAppSection()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" name="MyLawnAppSection" class="com.scotts.mygarden.test.TestAccount"/>
-        <method signature="TestAccount.PrivacyPolicySection()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" name="PrivacyPolicySection" class="com.scotts.mygarden.test.TestAccount"/>
-        <method signature="TestAccount.TermsConditionsSection()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" name="TermsConditionsSection" class="com.scotts.mygarden.test.TestAccount"/>
-        <method signature="TestExplorer.Decoratives()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" name="Decoratives" class="com.scotts.mygarden.test.TestExplorer"/>
-        <method signature="TestExplorer.Diseases()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" name="Diseases" class="com.scotts.mygarden.test.TestExplorer"/>
-        <method signature="TestExplorer.Edibles()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" name="Edibles" class="com.scotts.mygarden.test.TestExplorer"/>
-        <method signature="TestExplorer.Pests()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" name="Pests" class="com.scotts.mygarden.test.TestExplorer"/>
-        <method signature="TestExplorer.Weeds()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" name="Weeds" class="com.scotts.mygarden.test.TestExplorer"/>
-        <method signature="TestFreshTips.FeedArticleData()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" name="FeedArticleData" class="com.scotts.mygarden.test.TestFreshTips"/>
-        <method signature="TestFreshTips.HeroArticleData()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" name="HeroArticleData" class="com.scotts.mygarden.test.TestFreshTips"/>
-        <method signature="TestProjectOverview.NewSetupPlan()[pri:3, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" name="NewSetupPlan" class="com.scotts.mygarden.test.TestProjectOverview"/>
-        <method signature="TestProjectOverview.PrepPlant()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" name="PrepPlant" class="com.scotts.mygarden.test.TestProjectOverview"/>
-        <method signature="TestProjectOverview.PrepPlantvideo()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" name="PrepPlantvideo" class="com.scotts.mygarden.test.TestProjectOverview"/>
-        <method signature="TestProjectOverview.Supplies()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" name="Supplies" class="com.scotts.mygarden.test.TestProjectOverview"/>
-        <method signature="TestProjectOverview.WhatYouNeedSection()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" name="WhatYouNeedSection" class="com.scotts.mygarden.test.TestProjectOverview"/>
-        <method signature="TestSuccessPlans.ActivityCompleted()[pri:5, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" name="ActivityCompleted" class="com.scotts.mygarden.test.TestSuccessPlans"/>
-        <method signature="TestSuccessPlans.AllActivitesData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" name="AllActivitesData" class="com.scotts.mygarden.test.TestSuccessPlans"/>
-        <method signature="TestSuccessPlans.CancelDeleteSuccessPlan()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" name="CancelDeleteSuccessPlan" class="com.scotts.mygarden.test.TestSuccessPlans"/>
-        <method signature="TestSuccessPlans.DeleteSuccessPlan()[pri:6, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" name="DeleteSuccessPlan" class="com.scotts.mygarden.test.TestSuccessPlans"/>
-        <method signature="TestSuccessPlans.InstructionsData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" name="InstructionsData" class="com.scotts.mygarden.test.TestSuccessPlans"/>
+        <method signature="TestSuccessPlans.ActivityCompleted()[pri:5, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" name="ActivityCompleted" class="com.scotts.mygarden.test.TestSuccessPlans"/>
+        <method signature="TestSuccessPlans.AllActivitesData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" name="AllActivitesData" class="com.scotts.mygarden.test.TestSuccessPlans"/>
+        <method signature="TestSuccessPlans.CancelDeleteSuccessPlan()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" name="CancelDeleteSuccessPlan" class="com.scotts.mygarden.test.TestSuccessPlans"/>
+        <method signature="TestSuccessPlans.DeleteSuccessPlan()[pri:6, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" name="DeleteSuccessPlan" class="com.scotts.mygarden.test.TestSuccessPlans"/>
+        <method signature="TestSuccessPlans.InstructionsData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" name="InstructionsData" class="com.scotts.mygarden.test.TestSuccessPlans"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2019-08-02T12:40:15Z" name="Test" finished-at="2019-08-02T13:02:53Z" duration-ms="1357310">
-      <class name="com.scotts.mygarden.test.TestFreshTips">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" started-at="2019-08-02T12:57:20Z" name="Setup" finished-at="2019-08-02T12:58:03Z" duration-ms="43318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="FeedArticleData()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" started-at="2019-08-02T12:58:03Z" name="FeedArticleData" description="Verify the data when user taps on Feed posts article" finished-at="2019-08-02T12:58:31Z" duration-ms="27765" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FeedArticleData -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" started-at="2019-08-02T12:58:31Z" name="TearDrop" finished-at="2019-08-02T12:58:34Z" duration-ms="3111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" started-at="2019-08-02T12:58:34Z" name="Setup" finished-at="2019-08-02T12:59:20Z" duration-ms="46243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="HeroArticleData()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" started-at="2019-08-02T12:59:20Z" name="HeroArticleData" description="Verify the data under Hero article section" finished-at="2019-08-02T12:59:27Z" duration-ms="6770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HeroArticleData -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestFreshTips@33990a0c]" started-at="2019-08-02T12:59:27Z" name="TearDrop" finished-at="2019-08-02T12:59:30Z" duration-ms="3040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-      </class> <!-- com.scotts.mygarden.test.TestFreshTips -->
+    <test started-at="2019-08-20T12:45:34Z" name="Default test" finished-at="2019-08-20T12:51:30Z" duration-ms="355638">
       <class name="com.scotts.mygarden.test.TestSuccessPlans">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:51:03Z" name="Setup" finished-at="2019-08-02T12:51:53Z" duration-ms="50412" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:45:34Z" name="Setup" finished-at="2019-08-20T12:46:38Z" duration-ms="63451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="AllActivitesData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:51:53Z" name="AllActivitesData" description="Verify the data when user go to  All Activities tab under selected care plan" finished-at="2019-08-02T12:51:57Z" duration-ms="4346" status="PASS">
+        <test-method signature="AllActivitesData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:46:38Z" name="AllActivitesData" description="Verify the data when user go to  All Activities tab under selected care plan" finished-at="2019-08-20T12:46:43Z" duration-ms="5907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AllActivitesData -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:51:57Z" name="TearDrop" finished-at="2019-08-02T12:52:00Z" duration-ms="2946" status="PASS">
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:46:43Z" name="TearDrop" finished-at="2019-08-20T12:46:45Z" duration-ms="1157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:52:00Z" name="Setup" finished-at="2019-08-02T12:52:52Z" duration-ms="52106" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:46:45Z" name="Setup" finished-at="2019-08-20T12:47:27Z" duration-ms="42564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="CancelDeleteSuccessPlan()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:52:52Z" name="CancelDeleteSuccessPlan" description="Verify the functionality when user click on cancel button while deleting the success plan" finished-at="2019-08-02T12:52:59Z" duration-ms="6466" status="PASS">
+        <test-method signature="CancelDeleteSuccessPlan()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:47:27Z" name="CancelDeleteSuccessPlan" description="Verify the functionality when user click on cancel button while deleting the success plan" finished-at="2019-08-20T12:47:34Z" duration-ms="6746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CancelDeleteSuccessPlan -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:52:59Z" name="TearDrop" finished-at="2019-08-02T12:53:02Z" duration-ms="3004" status="PASS">
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:47:34Z" name="TearDrop" finished-at="2019-08-20T12:47:35Z" duration-ms="1116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:53:02Z" name="Setup" finished-at="2019-08-02T12:53:50Z" duration-ms="48401" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:47:35Z" name="Setup" finished-at="2019-08-20T12:48:30Z" duration-ms="54986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="InstructionsData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:53:50Z" name="InstructionsData" description="Verify the data under read more about it" finished-at="2019-08-02T12:54:20Z" duration-ms="30231" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-at com.scotts.mygarden.page.SuccessPlan.ReadLink(SuccessPlan.java:79)
-at com.scotts.mygarden.test.TestSuccessPlans.InstructionsData(TestSuccessPlans.java:64)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@47f04e4d (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/text_action})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3OLENNV', ip: '10.15.2.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="InstructionsData()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:48:30Z" name="InstructionsData" description="Verify the data under read more about it" finished-at="2019-08-20T12:48:34Z" duration-ms="4137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InstructionsData -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T12:54:20Z" name="TearDrop" finished-at="2019-08-02T12:54:24Z" duration-ms="3045" status="PASS">
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:48:34Z" name="TearDrop" finished-at="2019-08-20T12:48:35Z" duration-ms="1147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T13:00:27Z" name="Setup" finished-at="2019-08-02T13:01:22Z" duration-ms="54708" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:48:35Z" name="Setup" finished-at="2019-08-20T12:49:19Z" duration-ms="44176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="ActivityCompleted()[pri:5, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T13:01:22Z" name="ActivityCompleted" description="Success Plan Timeline_This Week" finished-at="2019-08-02T13:01:52Z" duration-ms="30324" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.scotts.gro.alpha:id/text_action})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-at com.scotts.mygarden.page.SuccessPlan.ReadLink(SuccessPlan.java:79)
-at com.scotts.mygarden.test.TestSuccessPlans.ActivityCompleted(TestSuccessPlans.java:52)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@514377fc (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 29 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.scotts.gro.alpha:id/text_action})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3OLENNV', ip: '10.15.2.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="ThisWeekDataVerify()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:49:19Z" name="ThisWeekDataVerify" description="Verify the data under This Week section under Success Plan timeline" finished-at="2019-08-20T12:49:22Z" duration-ms="2670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThisWeekDataVerify -->
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:49:22Z" name="TearDrop" finished-at="2019-08-20T12:49:23Z" duration-ms="1146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDrop -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:49:23Z" name="Setup" finished-at="2019-08-20T12:50:18Z" duration-ms="54484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="ActivityCompleted()[pri:5, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:50:18Z" name="ActivityCompleted" description="Success Plan Timeline_This Week" finished-at="2019-08-20T12:50:24Z" duration-ms="6611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ActivityCompleted -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T13:01:52Z" name="TearDrop" finished-at="2019-08-02T13:01:55Z" duration-ms="3107" status="PASS">
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:50:24Z" name="TearDrop" finished-at="2019-08-20T12:50:26Z" duration-ms="1220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T13:01:55Z" name="Setup" finished-at="2019-08-02T13:02:42Z" duration-ms="46381" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:50:26Z" name="Setup" finished-at="2019-08-20T12:51:20Z" duration-ms="54706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="DeleteSuccessPlan()[pri:6, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T13:02:42Z" name="DeleteSuccessPlan" description="Verify the functionality when user click on delete button while deleting the success plan" finished-at="2019-08-02T13:02:50Z" duration-ms="7835" status="PASS">
+        <test-method signature="DeleteSuccessPlan()[pri:6, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:51:20Z" name="DeleteSuccessPlan" description="Verify the functionality when user click on delete button while deleting the success plan" finished-at="2019-08-20T12:51:28Z" duration-ms="7895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteSuccessPlan -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@37654521]" started-at="2019-08-02T13:02:50Z" name="TearDrop" finished-at="2019-08-02T13:02:53Z" duration-ms="2986" status="PASS">
+        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestSuccessPlans@649bec2e]" started-at="2019-08-20T12:51:28Z" name="TearDrop" finished-at="2019-08-20T12:51:30Z" duration-ms="1474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDrop -->
       </class> <!-- com.scotts.mygarden.test.TestSuccessPlans -->
-      <class name="com.scotts.mygarden.test.TestExplorer">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:40:15Z" name="Setup" finished-at="2019-08-02T12:41:00Z" duration-ms="44208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="Decoratives()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:41:00Z" name="Decoratives" description="Verify the data on the page of Decoratives screen" finished-at="2019-08-02T12:41:33Z" duration-ms="33950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Decoratives -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:41:33Z" name="TearDrop" finished-at="2019-08-02T12:41:37Z" duration-ms="3962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:41:37Z" name="Setup" finished-at="2019-08-02T12:42:17Z" duration-ms="39205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="Diseases()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:42:17Z" name="Diseases" description="Verify the data on the page of Diseases screen" finished-at="2019-08-02T12:42:48Z" duration-ms="30945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Diseases -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:42:48Z" name="TearDrop" finished-at="2019-08-02T12:42:52Z" duration-ms="3937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:42:52Z" name="Setup" finished-at="2019-08-02T12:43:28Z" duration-ms="36753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="Edibles()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:43:28Z" name="Edibles" description="Verify the data on the page of edibles screen" finished-at="2019-08-02T12:44:01Z" duration-ms="32232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Edibles -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:44:01Z" name="TearDrop" finished-at="2019-08-02T12:44:04Z" duration-ms="3956" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:44:04Z" name="Setup" finished-at="2019-08-02T12:44:49Z" duration-ms="44323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="Pests()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:44:49Z" name="Pests" description="Verify the data on the page of Pests screen" finished-at="2019-08-02T12:45:18Z" duration-ms="29038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Pests -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:45:18Z" name="TearDrop" finished-at="2019-08-02T12:45:22Z" duration-ms="4330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:45:22Z" name="Setup" finished-at="2019-08-02T12:46:02Z" duration-ms="40247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="Weeds()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:46:02Z" name="Weeds" description="Verify the data on the page of Weeds screen" finished-at="2019-08-02T12:46:33Z" duration-ms="30428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Weeds -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestExplorer@793be5ca]" started-at="2019-08-02T12:46:33Z" name="TearDrop" finished-at="2019-08-02T12:46:37Z" duration-ms="4027" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-      </class> <!-- com.scotts.mygarden.test.TestExplorer -->
-      <class name="com.scotts.mygarden.test.TestAccount">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:54:24Z" name="Setup" finished-at="2019-08-02T12:55:11Z" duration-ms="47606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="MyLawnAppSection()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:55:11Z" name="MyLawnAppSection" description="Verify the functionality when user clicks on Download my lawn app" finished-at="2019-08-02T12:55:21Z" duration-ms="10197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyLawnAppSection -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:55:21Z" name="TearDrop" finished-at="2019-08-02T12:55:24Z" duration-ms="2721" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:55:24Z" name="Setup" finished-at="2019-08-02T12:56:10Z" duration-ms="46358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="PrivacyPolicySection()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:56:10Z" name="PrivacyPolicySection" description="Verify the functionality when user clicks on Privacy Policy" finished-at="2019-08-02T12:56:23Z" duration-ms="12800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PrivacyPolicySection -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:56:23Z" name="TearDrop" finished-at="2019-08-02T12:56:26Z" duration-ms="3211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:56:26Z" name="Setup" finished-at="2019-08-02T12:57:10Z" duration-ms="44077" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="TermsConditionsSection()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:57:10Z" name="TermsConditionsSection" description="Verify the functionality when user clicks on Terms and Condition" finished-at="2019-08-02T12:57:17Z" duration-ms="6181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TermsConditionsSection -->
-        <test-method is-config="true" signature="TearDrop()[pri:0, instance:com.scotts.mygarden.test.TestAccount@15aab8c6]" started-at="2019-08-02T12:57:17Z" name="TearDrop" finished-at="2019-08-02T12:57:20Z" duration-ms="2949" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDrop -->
-      </class> <!-- com.scotts.mygarden.test.TestAccount -->
-      <class name="com.scotts.mygarden.test.TestProjectOverview">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:46:37Z" name="Setup" finished-at="2019-08-02T12:47:30Z" duration-ms="53048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="PrepPlant()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:47:30Z" name="PrepPlant" description="Verify the data when user click on see plan instruction link under prep &amp; plant section" finished-at="2019-08-02T12:47:51Z" duration-ms="21358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PrepPlant -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:47:51Z" name="Setup" finished-at="2019-08-02T12:48:47Z" duration-ms="55325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="PrepPlantvideo()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:48:47Z" name="PrepPlantvideo" description="Verify the data under Prep &amp; Plant  section" finished-at="2019-08-02T12:48:58Z" duration-ms="11390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PrepPlantvideo -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:48:58Z" name="Setup" finished-at="2019-08-02T12:49:53Z" duration-ms="55042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="Supplies()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:49:53Z" name="Supplies" description="Verify the data of &#039;Non- Essential Supplies&#039; section" finished-at="2019-08-02T12:50:00Z" duration-ms="7238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Supplies -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:50:00Z" name="Setup" finished-at="2019-08-02T12:50:56Z" duration-ms="55246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="WhatYouNeedSection()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:50:56Z" name="WhatYouNeedSection" description="Verify the data under &#039;What you need&#039; section" finished-at="2019-08-02T12:51:03Z" duration-ms="7006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WhatYouNeedSection -->
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T12:59:30Z" name="Setup" finished-at="2019-08-02T13:00:18Z" duration-ms="48404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="NewSetupPlan()[pri:3, instance:com.scotts.mygarden.test.TestProjectOverview@2df9b86]" started-at="2019-08-02T13:00:18Z" name="NewSetupPlan" description="Verify the functionality when user click set up a new plan" finished-at="2019-08-02T13:00:27Z" duration-ms="8961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NewSetupPlan -->
-      </class> <!-- com.scotts.mygarden.test.TestProjectOverview -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

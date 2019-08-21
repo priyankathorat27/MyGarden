@@ -11,7 +11,6 @@ import com.scotts.mygarden.baseclass.LaunchApp;
 import com.scotts.mygarden.page.ExplorerScreen;
 import com.scotts.mygarden.page.HomePage;
 import com.scotts.mygarden.page.LoginPage;
-import com.scotts.mygarden.page.PlantDetails;
 import com.scotts.mygarden.utility.Testcase;
 
 public class TestExplorer extends LaunchApp {
@@ -71,7 +70,6 @@ public class TestExplorer extends LaunchApp {
 		explorer.DiseasesPage();
 		Assert.assertTrue(explorer.browseValidation());
 	}
-	
 	
 	@AfterMethod(alwaysRun = true)
 	public void TearDrop() {

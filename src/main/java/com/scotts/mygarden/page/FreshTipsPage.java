@@ -19,7 +19,7 @@ public class FreshTipsPage extends LaunchApp{
 	}
 	
 	@CacheLookup
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/thumbnail")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ImageView")
 	private static AndroidElement heroArticle;
 	
 	@CacheLookup
@@ -34,8 +34,13 @@ public class FreshTipsPage extends LaunchApp{
 	
     public FeedArticlePage feedArt() {
     	
-    	 driver.findElement(MobileBy.AndroidUIAutomator(
-    	 "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Growing Vegetables in Containers\"));"));
+//    	 driver.findElement(MobileBy.AndroidUIAutomator(
+//    	 "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Growing Vegetables in Containers\"));"));
+    	
+    	driver.findElement(MobileBy.AndroidUIAutomator(
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Growing Vegetables in Containers\"));"));
+    	
 		FreshTipsPage.feedArticle.click();
 		return new FeedArticlePage();
 	}

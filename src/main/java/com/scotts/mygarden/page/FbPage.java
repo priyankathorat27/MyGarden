@@ -2,7 +2,6 @@ package com.scotts.mygarden.page;
 
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
-
 import com.scotts.mygarden.baseclass.LaunchApp;
 
 import io.appium.java_client.android.AndroidElement;
@@ -16,6 +15,10 @@ public class FbPage extends LaunchApp{
 		super();
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
+	
+//	@CacheLookup
+//	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.Button")
+//	private static AndroidElement fbLoginLink;
 	
 	@CacheLookup
 	@AndroidFindBy(id = "m_login_email")
@@ -32,13 +35,15 @@ public class FbPage extends LaunchApp{
 	
     public ContinueFbPage fbLogin(String Email, String Password) {
     	
+//    	FbPage.fbLoginLink.click();
     	FbPage.fbEmail.sendKeys(Email);
     	driver.hideKeyboard();
     	FbPage.fbPassword.sendKeys(Password);
     	driver.hideKeyboard();
     	FbPage.fbLoginBtn.click();
     	
-		return new ContinueFbPage();
+    	return new ContinueFbPage();
+//		return new ExplorerScreen();
     	  
       }
 	

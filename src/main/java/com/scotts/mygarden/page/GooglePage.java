@@ -18,7 +18,7 @@ public class GooglePage extends LaunchApp{
 	}
 	
 	@CacheLookup
-	@AndroidFindBy(id = "com.google.android.gms:id/title")
+	@AndroidFindBy(id = "com.google.android.gms:id/main_title")
 	private static AndroidElement googleTitle;
 	
 	@CacheLookup

@@ -18,7 +18,7 @@ public class PrivacyPolicyPage extends LaunchApp{
 	}
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.view.View[contains(@text, 'Privacy Policy')]")
+	@AndroidFindBy(id = "com.sec.android.app.sbrowser:id/location_bar_edit_text")
 	private static AndroidElement privacyTitle;
 	
 	public boolean PrivacyVal() {

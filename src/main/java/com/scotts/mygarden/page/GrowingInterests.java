@@ -90,7 +90,7 @@ public class GrowingInterests extends LaunchApp {
 	private static AndroidElement keepItSimple;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.Button[contains(@text, 'View plant projects for me')]")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.Button")
 	private static AndroidElement viewplantbtn;
 	
 	
@@ -120,7 +120,7 @@ public class GrowingInterests extends LaunchApp {
 				(By.xpath("//android.widget.TextView[contains(@text, 'Indoorsy Plants')]")));
 		GrowingInterests.indoorsyplants.click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated
-				(By.xpath("//android.widget.Button[contains(@text, 'View plant projects for me')]")));
+				(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.Button")));
 		GrowingInterests.viewplantbtn.click();
 		
 		return new ExplorerScreen();

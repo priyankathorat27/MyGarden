@@ -18,7 +18,7 @@ public class TermsPage extends LaunchApp{
 	}
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.view.View[contains(@text, 'Terms & Conditions')]")
+	@AndroidFindBy(id = "com.sec.android.app.sbrowser:id/location_bar_edit_text")
 	private static AndroidElement termsTitle;
 	
 	public boolean TermsVal() {

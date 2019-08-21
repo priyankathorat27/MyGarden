@@ -24,7 +24,15 @@ public class ExplorerScreen extends LaunchApp {
 	private static AndroidElement myaccount;
 	
 	@CacheLookup
-	@AndroidFindBy(className = "android.widget.RelativeLayout")
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/my_care_plans")
+	private static AndroidElement myGardenTab;
+	
+	@CacheLookup
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/fresh_cuts")
+	private static AndroidElement freshTips;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.RelativeLayout")
 	private static AndroidElement searchfield;
 	
 	@CacheLookup
@@ -48,7 +56,7 @@ public class ExplorerScreen extends LaunchApp {
 	private static AndroidElement diseases;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Out Of Season')]")
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'OUT OF SEASON')]")
 	private static AndroidElement outofseason;
 	
 	@CacheLookup
@@ -88,14 +96,6 @@ public class ExplorerScreen extends LaunchApp {
 	private static AndroidElement aloeVeraLink;
 	
 	@CacheLookup
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/my_care_plans")
-	private static AndroidElement myGardenTab;
-	
-	@CacheLookup
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/fresh_cuts")
-	private static AndroidElement freshTips;
-	
-	@CacheLookup
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/close_button")
 	private static AndroidElement closeBtn;
 
@@ -108,8 +108,13 @@ public class ExplorerScreen extends LaunchApp {
    
    public ExplorerScreen EdiblesPage() {
 	   
-	   driver.findElement(MobileBy.AndroidUIAutomator(
-			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Edibles\"));"));
+	//   driver.findElement(MobileBy.AndroidUIAutomator(
+	//		   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Edibles\"));"));
+	   
+	     driver.findElement(MobileBy.AndroidUIAutomator(
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Edibles\"));"));
+	   
 	   ExplorerScreen.edibles.click();
 	   ExplorerScreen.outofseason.click();
 	   ExplorerScreen.backbtn.click();
@@ -120,8 +125,13 @@ public class ExplorerScreen extends LaunchApp {
    
    public ExplorerScreen DecorativesPage() {
 	   
+  //   driver.findElement(MobileBy.AndroidUIAutomator(
+ //			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Decoratives\"));"));
+	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Decoratives\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Decoratives\"));"));
+	   
 	   ExplorerScreen.decoratives.click();
 	   ExplorerScreen.outofseason.click();
 	   ExplorerScreen.backbtn.click();
@@ -131,8 +141,13 @@ public class ExplorerScreen extends LaunchApp {
    
    public ExplorerScreen PestsPage() {
 	   
+//	   driver.findElement(MobileBy.AndroidUIAutomator(
+//			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Pests\"));"));
+	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Pests\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Pests\"));"));
+	   
 	   ExplorerScreen.pests.click();
 	   ExplorerScreen.outofseason.click();
 	   ExplorerScreen.backbtn.click();
@@ -142,8 +157,13 @@ public class ExplorerScreen extends LaunchApp {
 
    public ExplorerScreen WeedsPage() {
 	   
+//	   driver.findElement(MobileBy.AndroidUIAutomator(
+//			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Weeds\"));"));
+	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Weeds\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Weeds\"));"));
+	   
 	   ExplorerScreen.weeds.click();
 	   ExplorerScreen.outofseason.click();
 	   ExplorerScreen.backbtn.click();
@@ -153,8 +173,13 @@ public class ExplorerScreen extends LaunchApp {
    
    public ExplorerScreen DiseasesPage() {
 	   
+//	   driver.findElement(MobileBy.AndroidUIAutomator(
+//			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Diseases\"));"));
+	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Diseases\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Diseases\"));"));
+	   
 	   ExplorerScreen.diseases.click();
 	   ExplorerScreen.outofseason.click();
 	   ExplorerScreen.backbtn.click();
@@ -170,16 +195,26 @@ public class ExplorerScreen extends LaunchApp {
    public PlantDetails selectPlan() {
 	   
 	   
+//	   driver.findElement(MobileBy.AndroidUIAutomator(
+//  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air-Purifying Plants\"));"));
+	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air-Purifying Plants\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Air-Purifying Plants\"));"));
+	   
 	   ExplorerScreen.airPlantsLink.click();
 	   return new PlantDetails();
    }
    
    public PlantDetails selectExistingPlan() {
 	   
+//	   driver.findElement(MobileBy.AndroidUIAutomator(
+//  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aloe vera\"));"));
+	   
 	   driver.findElement(MobileBy.AndroidUIAutomator(
-  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aloe //vera\"));"));
+	    		 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView"
+	    		 + "(new UiSelector().textContains(\"Aloe vera\"));"));
+	   
 	   ExplorerScreen.aloeVeraLink.click();
 	   return new PlantDetails();
    }

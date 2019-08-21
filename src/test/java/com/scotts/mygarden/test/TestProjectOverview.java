@@ -3,6 +3,7 @@ package com.scotts.mygarden.test;
 import java.net.MalformedURLException;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -41,6 +42,26 @@ public class TestProjectOverview extends LaunchApp{
 		Assert.assertTrue(details.WhatYouNeedVal());
 	}
 	
+	@Test(groups = {"smoke", "regression"}, priority = 3,  description = Testcase.TC77)
+	public void NewSetupPlan() {
+		
+		
+		PlantDetails details = new PlantDetails();
+		details.AddPlan();
+		MyGardenPage garden = new MyGardenPage();
+		Assert.assertTrue(garden.MyGardenVal());
+	}
+	
+	@Test(description = Testcase.TC78, groups = {"regression"}, priority = 4)
+	public void ExistingPlan() {
+		
+		PlantDetails details = new PlantDetails();
+		Assert.assertTrue(details.headerVal());
+		details.existingSetupPlan();
+		Assert.assertTrue(details.headerVal());
+		
+	}
+	
 	@Test(groups = {"smoke"}, description = Testcase.TC63)
 	public void Supplies() {
 		
@@ -73,24 +94,10 @@ public class TestProjectOverview extends LaunchApp{
 		prep.PrepClose();
 	}
 	
-	@Test(groups = {"smoke", "regression"}, priority = 3,  description = Testcase.TC77)
-	public void NewSetupPlan() {
+	@AfterMethod(alwaysRun = true)
+	public void TearDrop() {
 		
-		
-		PlantDetails details = new PlantDetails();
-		details.AddPlan();
-		MyGardenPage garden = new MyGardenPage();
-		Assert.assertTrue(garden.MyGardenVal());
-	}
-	
-	@Test(description = Testcase.TC78, groups = {"regression"}, priority = 4)
-	public void ExistingPlan() {
-		
-		PlantDetails details = new PlantDetails();
-		Assert.assertTrue(details.headerVal());
-		details.existingSetupPlan();
-		Assert.assertTrue(details.headerVal());
-		
+		driver.quit();
 	}
 
 }

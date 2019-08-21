@@ -50,12 +50,8 @@ public class SuccessPlan extends LaunchApp{
 	private static AndroidElement allActivitiesTab;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Completed')]")
-	private static AndroidElement completedtask;
-	
-	@CacheLookup
-	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Missed')]")
-	private static AndroidElement missedtask;
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Complete by')]")
+	private static AndroidElement completeBytask;
 	
 	@CacheLookup
 	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Overdue')]")
@@ -110,8 +106,7 @@ public class SuccessPlan extends LaunchApp{
     
     public boolean AllActivitiesVal() {
     	
-    	return SuccessPlan.completedtask.isDisplayed() || SuccessPlan.missedtask.isDisplayed() 
-    			|| SuccessPlan.overduetask.isDisplayed();
+    	return SuccessPlan.completeBytask.isDisplayed() || SuccessPlan.overduetask.isDisplayed();
     			
     }
 

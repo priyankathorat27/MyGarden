@@ -3,12 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scotts.mygarden.test.TestProjectOverview">
+      <class name="com.scotts.mygarden.test.TestSuccessPlans">
         <methods>
-          <include name="ExistingPlan"/>
+          <include name="ActivityCompleted"/>
+          <include name="TearDrop"/>
+          <include name="DeleteSuccessPlan"/>
+          <include name="CancelDeleteSuccessPlan"/>
+          <include name="InstructionsData"/>
           <include name="Setup"/>
+          <include name="ThisWeekDataVerify"/>
+          <include name="AllActivitesData"/>
         </methods>
-      </class> <!-- com.scotts.mygarden.test.TestProjectOverview -->
+      </class> <!-- com.scotts.mygarden.test.TestSuccessPlans -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

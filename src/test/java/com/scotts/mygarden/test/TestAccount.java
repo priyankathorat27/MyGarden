@@ -67,6 +67,15 @@ public class TestAccount extends LaunchApp{
 		Assert.assertTrue(policy.PrivacyVal());
 	}
 	
+	@Test(groups = {"smoke"}, description = Testcase.TC158)
+	public void LogoutFunctionality() {
+		
+		MyAccountScreen account = new MyAccountScreen();
+		account.logout();
+		HomePage home = new HomePage();
+		home.myGardenTitleVal();
+	}
+	
 	
 	@AfterMethod(alwaysRun = true)
 	public void TearDrop() {

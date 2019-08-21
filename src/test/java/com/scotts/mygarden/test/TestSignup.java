@@ -62,21 +62,6 @@ public class TestSignup extends LaunchApp {
 		Assert.assertTrue(explorer.SearchVal());
 	} 
 	
-	
-	@Test(groups = {"smoke", "regression"}, priority = 2, description = Testcase.TC03)
-	public void ValidSignUp() {
-		
-		SignupPage.ScottsSignup(proReader("signupemail"), proReader("signuppassword"));
-		Assert.assertTrue(Zipcode.ZipcodeVal());
-		Zipcode.zipcodeInput(proReader("code"));
-		Assert.assertTrue(GrowingInterests.InterestsVal());
-		GrowingInterests.SelectInterests();
-		ExplorerScreen explorer = new ExplorerScreen();
-		Assert.assertTrue(explorer.SearchVal());
-
-	}
-	
-	
 	@Test(priority = 3, description = Testcase.TC29)
 	public void GuestUserSelectLessInterests() {
 		
@@ -100,6 +85,19 @@ public class TestSignup extends LaunchApp {
 	
 	}  
 	
+	
+	@Test(groups = {"smoke", "regression"}, priority = 2, description = Testcase.TC03)
+	public void ValidSignUp() {
+		
+		SignupPage.ScottsSignup(proReader("signupemail"), proReader("signuppassword"));
+		Assert.assertTrue(Zipcode.ZipcodeVal());
+		Zipcode.zipcodeInput(proReader("code"));
+		Assert.assertTrue(GrowingInterests.InterestsVal());
+		GrowingInterests.SelectInterests();
+		ExplorerScreen explorer = new ExplorerScreen();
+		Assert.assertTrue(explorer.SearchVal());
+
+	}
 	
 	@AfterMethod(alwaysRun = true)
 	public void TearDrop() {
