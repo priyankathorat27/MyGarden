@@ -1,8 +1,10 @@
 package com.scotts.mygarden.page;
 
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import com.scotts.mygarden.baseclass.LaunchApp;
+
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
@@ -11,48 +13,57 @@ public class SignupPage extends LaunchApp {
 	
 	public SignupPage() {
 		
+		super();
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Sign Up')]")
+	private static AndroidElement SignupTitle;
 
-	@AndroidFindBy(id = "com.scotts.gro.alpha:id/tv_continue_as_guest")
-	WebElement guestUser;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Continue as Guest')]")
+	private static AndroidElement guestUser;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Email']")
-	WebElement inputemail;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Email')]")
+	private static AndroidElement inputemail;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Password']")
-	WebElement inputpassword;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Password')]")
+	private static AndroidElement inputpassword;
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Confirm Password']")
-	WebElement inputconfirmpassword;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Confirm Password')]")
+	private static AndroidElement inputconfirmpassword;
 	
-	@AndroidFindBy(xpath = "(//android.widget.Button)[3]")
-	WebElement createaccountbtn;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'CREATE ACCOUNT')]")
+	private static AndroidElement createaccountbtn;
 	
-	public WebElement guestUser() {
+	
+    public static boolean SignupValidation() {
+    	
+		return SignupPage.SignupTitle.isDisplayed();	
+	}
+    
+    public static Zipcode VerificationGuestLink() {
+    	SignupPage.guestUser.click();
+    	return new Zipcode();
+    }
+	
+	
+	public static Zipcode ScottsSignup(String SignupEmail, String SignupPassword) {
 		
-		return guestUser;
+		SignupPage.inputemail.sendKeys(SignupEmail);
+		SignupPage.inputpassword.sendKeys(SignupPassword);
+		SignupPage.inputconfirmpassword.sendKeys(SignupPassword);
+		SignupPage.createaccountbtn.click();
+		
+		return new Zipcode();
+		
 	}
 	
-    public WebElement inputemail() {
-    	return inputemail;
-    
-    }
-    
-    public WebElement inputpassword() {
-    	return inputpassword;
-    
-    }
-    
-    public WebElement inputconfirmpassword() {
-    	return inputconfirmpassword;
-    
-    }
-    
-    public WebElement createaccountbtn() {
-    	return createaccountbtn;
-    
-    }
-    
+
 
 }

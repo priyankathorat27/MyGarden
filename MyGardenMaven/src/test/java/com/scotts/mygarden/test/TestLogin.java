@@ -1,19 +1,20 @@
 package com.scotts.mygarden.test;
 
 import java.net.MalformedURLException;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.scotts.mygarden.baseclass.LaunchApp;
+import com.scotts.mygarden.page.ContinueFbPage;
 import com.scotts.mygarden.page.ExplorerScreen;
+import com.scotts.mygarden.page.FbPage;
+import com.scotts.mygarden.page.GooglePage;
 import com.scotts.mygarden.page.HomePage;
 import com.scotts.mygarden.page.LoginPage;
-import com.scotts.mygarden.utility.PropertyFile;
+import com.scotts.mygarden.utility.Testcase;
 
 
 public class TestLogin extends LaunchApp {
@@ -23,123 +24,110 @@ public class TestLogin extends LaunchApp {
 		
 		AppInitialize();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		HomePage hp = new HomePage();
-		hp.loginlink().click();
+		HomePage home = new HomePage();
+		home.LoginLink();
 		
 	}
 	
-	@Test(priority = 1, groups = {"login"}, description = "MGTC_15: Verify the data when user login with valid credentials")
-	public void ValidLogin() {
-		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	@Test(groups = {"smoke", "regression"}, priority = 1, description = Testcase.TC15)
+	public void ValidLoginTC() {
 		
 		//Login Page
-		LoginPage lp = new LoginPage();
-		lp.loginEmail().sendKeys(PropertyFile.proReader("loginEmail"));
-		driver.hideKeyboard();
-		lp.loginPassword().sendKeys(PropertyFile.proReader("loginPassword"));
-		driver.hideKeyboard();
-		lp.loginbtn().click();
-		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		LoginPage login = new LoginPage();
+		Assert.assertTrue(login.LoginValidation());
+		login.ValidData(proReader("loginEmail"), proReader("loginPassword"));
 		
 		//Explorer Page
-		ExplorerScreen es = new ExplorerScreen();
-		WebElement search = es.searchfield();
-		Assert.assertTrue(search.isDisplayed(), "User is not redirected to Explorer screen. Test case failed");
+		ExplorerScreen explorer = new ExplorerScreen();
+		Assert.assertTrue(explorer.SearchVal());
 	}  
 	
-	@Test(priority = 2, description = "MGTC_16: Verify the data when user login with invalid email address and valid password")
-	public void ValidEmailInvalidPwd() {
-		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	@Test(priority = 2, description = Testcase.TC16)
+	public void InvalidEmailValidPwdTC() {
 		
 		//Login Page
-		LoginPage lp = new LoginPage();
-		lp.loginEmail().sendKeys(PropertyFile.proReader("InvalidEmail"));
-		driver.hideKeyboard();
-		lp.loginPassword().sendKeys(PropertyFile.proReader("loginPassword"));
-		driver.hideKeyboard();
-		lp.loginbtn().click();
+		LoginPage login = new LoginPage();
+		Assert.assertTrue(login.LoginValidation());
+		login.InvalidData(proReader("InvalidEmail"), proReader("loginPassword"));
 		
-		WebElement forgotpwd = lp.forgotpasswordlink();
-		Assert.assertTrue(forgotpwd.isDisplayed(), "User is able to login with invalid credentials. Test case failed");
+		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 3, description = "MGTC_17: Verify the data when user login with valid email address and invalid password")
-	public void InvalidEmailValidPwd() {
-		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	@Test(priority = 3, description = Testcase.TC17)
+	public void ValidEmailinValidPwdTC() {
 		
 		//Login Page
-		LoginPage lp = new LoginPage();
-		lp.loginEmail().sendKeys(PropertyFile.proReader("loginEmail"));
-		driver.hideKeyboard();
-		lp.loginPassword().sendKeys(PropertyFile.proReader("InvalidPassword"));
-		driver.hideKeyboard();
-		lp.loginbtn().click();
+		LoginPage login = new LoginPage();
+		Assert.assertTrue(login.LoginValidation());
+		login.InvalidData(proReader("loginEmail"), proReader("InvalidPassword"));
 		
-		WebElement forgotpwd = lp.forgotpasswordlink();
-		Assert.assertTrue(forgotpwd.isDisplayed(), "User is able to login with invalid credentials. Test case failed");
+		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 4, description = "MGTC_18: Verify the data when user login with invalid email address and invalid password")
-	public void InvalidEmailInvalidPwd() {
-		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	@Test(priority = 4, description = Testcase.TC18)
+	public void InvalidEmailInvalidPwdTC() {
 		
 		//Login Page
-		LoginPage lp = new LoginPage();
-		lp.loginEmail().sendKeys(PropertyFile.proReader("InvalidEmail"));
-		driver.hideKeyboard();
-		lp.loginPassword().sendKeys(PropertyFile.proReader("InvalidPassword"));
-		driver.hideKeyboard();
-		lp.loginbtn().click();
+		LoginPage login = new LoginPage();
+		Assert.assertTrue(login.LoginValidation());
+		login.InvalidData(proReader("InvalidEmail"), proReader("InvalidPassword"));
 		
-		WebElement forgotpwd = lp.forgotpasswordlink();
-		Assert.assertTrue(forgotpwd.isDisplayed(), "User is able to login with invalid credentials. Test case failed");
+		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 5, description = "MGTC_19: Verify the data when  user login with blank email address and valid password")
-	public void BlankEmailValidPwd() {
-		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	@Test(priority = 5, description = Testcase.TC19)
+	public void BlankEmailValidPwdTC() {
 		
 		//Login Page
-		LoginPage lp = new LoginPage();
-		lp.loginEmail().sendKeys("");
-		driver.hideKeyboard();
-		lp.loginPassword().sendKeys(PropertyFile.proReader("loginPassword"));
-		driver.hideKeyboard();
-		lp.loginbtn().click();
+		LoginPage login = new LoginPage();
+		Assert.assertTrue(login.LoginValidation());
+		login.InvalidData("", proReader("loginPassword"));
 		
-		WebElement forgotpwd = lp.forgotpasswordlink();
-		Assert.assertTrue(forgotpwd.isDisplayed(), "User is able to login with invalid credentials. Test case failed");
+		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
-	@Test(priority = 6, description = "MGTC_20: Verify the data when user login with valid email address and blank password ")
+	@Test(priority = 6, description = Testcase.TC20)
 	public void ValidEmailBlankPwd() {
 		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		
 		//Login Page
-		LoginPage lp = new LoginPage();
-		lp.loginEmail().sendKeys(PropertyFile.proReader("loginEmail"));
-		driver.hideKeyboard();
-		lp.loginPassword().sendKeys("");
-		driver.hideKeyboard();
-		lp.loginbtn().click();
+		LoginPage login = new LoginPage();
+		Assert.assertTrue(login.LoginValidation());
+		login.InvalidData(proReader("loginEmail"), "");
 		
-		WebElement forgotpwd = lp.forgotpasswordlink();
-		Assert.assertTrue(forgotpwd.isDisplayed(), "User is able to login with invalid credentials. Test case failed");
+		Assert.assertTrue(login.ValidationForgotPwd());
 	}
 	
+	@Test(groups = {"smoke","regression"}, priority = 1, description = Testcase.TC154)
+	public void SocialFbLogin() {
+		
+		LoginPage login = new LoginPage();
+		login.FbBtn();
+		FbPage fb = new FbPage();
+		fb.fbLogin(proReader("FbEmail"), proReader("FbPassword"));
+		ContinueFbPage confb = new ContinueFbPage();
+		Assert.assertTrue(confb.FbVal());
+		confb.ContinueFbLogin();
+		ExplorerScreen explorer = new ExplorerScreen();
+		Assert.assertTrue(explorer.SearchVal());
+	}
+	
+	@Test(groups = {"smoke","regression"}, priority = 1, description = Testcase.TC155)
+	public void SocialGoogleLogin() {
+		
+		LoginPage login = new LoginPage();
+		login.GoogleBtn();
+		GooglePage google = new GooglePage();
+		Assert.assertTrue(google.GoogleVal());
+		google.GoogleLogin();
+		ExplorerScreen explorer = new ExplorerScreen();
+		Assert.assertTrue(explorer.SearchVal());
+	}
+
 	
 	@AfterMethod(alwaysRun = true)
 	public void TearDrop() {
 		
-		driver.resetApp();
+		driver.quit();
 	}
 
 }

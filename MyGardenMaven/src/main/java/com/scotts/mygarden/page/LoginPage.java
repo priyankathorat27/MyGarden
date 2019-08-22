@@ -1,10 +1,12 @@
 package com.scotts.mygarden.page;
 
-import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 
 import com.scotts.mygarden.baseclass.LaunchApp;
-
+import com.scotts.mygarden.page.ExplorerScreen;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
@@ -12,41 +14,83 @@ public class LoginPage extends LaunchApp {
 	
 	public LoginPage() {
 		
+		super();
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text = 'Email']")
-	WebElement loginEmail;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Log In')]")
+	private static AndroidElement loginTitle;
 	
-	@AndroidFindBy(xpath = "//*[@text = 'Password']")
-	WebElement loginPassword;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Email')]")
+	private static AndroidElement loginEmail;
 	
-	@AndroidFindBy(xpath = "//android.widget.Button[@content-desc = 'LOG IN']")
-	WebElement loginbtn;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.EditText[contains(@text, 'Password')]")
+	private static AndroidElement loginPassword;
 	
-	@AndroidFindBy(xpath = "//android.view.View[@content-desc = 'Forgot Password?']")
-	WebElement forgotpasswordlink;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'LOG IN')]")
+	private static AndroidElement loginbtn;
 	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'Facebook Facebook')]")
+	private static AndroidElement fbLogin;
 	
-	public WebElement loginEmail() {
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.Button[contains(@content-desc, 'Google Google')]")
+	private static AndroidElement googleLogin;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.view.View[contains(@content-desc, 'Forgot Password?')]")
+	private static AndroidElement forgotpasswordlink;
+
+	public boolean LoginValidation() {
 		
-		return loginEmail;
+		return LoginPage.loginTitle.isDisplayed();
 	}
-	
-   public WebElement loginPassword() {
+
+    public ExplorerScreen ValidData(String loginEmail, String loginPassword) {
+    	
+    	LoginPage.loginEmail.sendKeys(loginEmail);
+    	driver.hideKeyboard();
+    	LoginPage.loginPassword.sendKeys(loginPassword);
+    	driver.hideKeyboard();
+    	LoginPage.loginbtn.click();
+    	
+		return new ExplorerScreen();
+    	  
+      }
+    
+    public boolean ValidationForgotPwd() {
 		
-		return loginPassword;
+		return LoginPage.forgotpasswordlink.isDisplayed();	
 	}
+    
+    
+    public LoginPage InvalidData(String loginEmail, String loginPassword) {
+    	
+    	LoginPage.loginEmail.sendKeys(loginEmail);
+    	driver.hideKeyboard();
+    	LoginPage.loginPassword.sendKeys(loginPassword);
+    	driver.hideKeyboard();
+    	LoginPage.loginbtn.click();
+    	
+		return new LoginPage();
+    	  
+     }
    
-   public WebElement loginbtn() {
+     public GooglePage GoogleBtn() {
 	   
-	   return loginbtn;
+	   LoginPage.googleLogin.click();
+	   return new GooglePage();
    }
    
-   public WebElement forgotpasswordlink() {
+   public FbPage FbBtn() {
 	   
-	   return forgotpasswordlink;
+	   LoginPage.fbLogin.click();
+	   return new FbPage();
    }
-
-
-}
+    
+}    

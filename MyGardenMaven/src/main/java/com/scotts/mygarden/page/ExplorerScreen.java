@@ -1,10 +1,12 @@
 package com.scotts.mygarden.page;
 
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 
 import com.scotts.mygarden.baseclass.LaunchApp;
 
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
@@ -12,80 +14,193 @@ public class ExplorerScreen extends LaunchApp {
 	
 	public ExplorerScreen() {
 		
+		super();
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	
+	@CacheLookup
 	@AndroidFindBy(id = "com.scotts.gro.alpha:id/account")
-	WebElement myaccount;
+	private static AndroidElement myaccount;
 	
+	@CacheLookup
 	@AndroidFindBy(className = "android.widget.RelativeLayout")
-	WebElement searchfield;
+	private static AndroidElement searchfield;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Edibles']")
-	WebElement edibles;
+	@CacheLookup
+ 	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Edibles')]")
+ 	private static AndroidElement edibles;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Decoratives']")
-	WebElement decoratives;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Decoratives')]")
+	private static AndroidElement decoratives;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Pests']")
-	WebElement pests;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Pests')]")
+	private static AndroidElement pests;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Weeds']")
-	WebElement weeds;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Weeds')]")
+	private static AndroidElement weeds;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Diseases']")
-	WebElement diseases;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Diseases')]")
+	private static AndroidElement diseases;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text = 'Out Of Season']")
-	WebElement outofseason;
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Out Of Season')]")
+	private static AndroidElement outofseason;
 	
+	@CacheLookup
 	@AndroidFindBy(className = "android.widget.ImageButton")
-	WebElement backbtn;
+	private static AndroidElement backbtn;
 	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Edibles')]")
+	private static AndroidElement ediblestitle;
 	
-    public WebElement myaccount() {
-		
-		return myaccount;
-	}
+	@CacheLookup
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Decoratives')]")
+	private static AndroidElement decorativestitle;
 	
-	public WebElement searchfield() {
-		
-		return searchfield;
-	}
+	@CacheLookup
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Pests')]")
+	private static AndroidElement peststitle;
 	
-	public WebElement edibles() {
-		
-		return edibles;
-	}
+	@CacheLookup
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Weeds')]")
+	private static AndroidElement weedstitle;
 	
-    public WebElement decoratives() {
-		
-		return decoratives;
-	}
-    
-    public WebElement pests() {
-		
-		return pests;
-	}
-    
-    public WebElement weeds() {
-		
-		return weeds;
-	}
-    
-    public WebElement diseases() {
-		
-		return diseases;
-	}
-    
-    public WebElement outofseason() {
-    	
-    	return outofseason;
-    }
-    
-    public WebElement backbtn() {
-    	
-    	return backbtn;
-    }
+	@CacheLookup
+	@AndroidFindBy(xpath = "//com.scotts.gro.alpha:id/header_title[contains(@text, 'Diseases')]")
+	private static AndroidElement diseasestitle;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Browse by Category')]")
+	private static AndroidElement browsebycategory;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Air-Purifying Plants')]/preceding-sibling::android.widget.FrameLayout")
+	private static AndroidElement airPlantsLink;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'Aloe vera')]/preceding-sibling::android.widget.FrameLayout")
+	private static AndroidElement aloeVeraLink;
+	
+	@CacheLookup
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/my_care_plans")
+	private static AndroidElement myGardenTab;
+	
+	@CacheLookup
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/fresh_cuts")
+	private static AndroidElement freshTips;
+	
+	@CacheLookup
+	@AndroidFindBy(id = "com.scotts.gro.alpha:id/close_button")
+	private static AndroidElement closeBtn;
+
+
+   public boolean browseValidation() {
+	   
+	   return ExplorerScreen.browsebycategory.isDisplayed();
+	   
+   }
+   
+   public ExplorerScreen EdiblesPage() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Edibles\"));"));
+	   ExplorerScreen.edibles.click();
+	   ExplorerScreen.outofseason.click();
+	   ExplorerScreen.backbtn.click();
+	   
+	   return new ExplorerScreen();
+   }
+   
+   
+   public ExplorerScreen DecorativesPage() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Decoratives\"));"));
+	   ExplorerScreen.decoratives.click();
+	   ExplorerScreen.outofseason.click();
+	   ExplorerScreen.backbtn.click();
+	   
+	   return new ExplorerScreen();
+   }
+   
+   public ExplorerScreen PestsPage() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Pests\"));"));
+	   ExplorerScreen.pests.click();
+	   ExplorerScreen.outofseason.click();
+	   ExplorerScreen.backbtn.click();
+	   
+	   return new ExplorerScreen();
+   }
+
+   public ExplorerScreen WeedsPage() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Weeds\"));"));
+	   ExplorerScreen.weeds.click();
+	   ExplorerScreen.outofseason.click();
+	   ExplorerScreen.backbtn.click();
+	   
+	   return new ExplorerScreen();
+   }
+   
+   public ExplorerScreen DiseasesPage() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Diseases\"));"));
+	   ExplorerScreen.diseases.click();
+	   ExplorerScreen.outofseason.click();
+	   ExplorerScreen.backbtn.click();
+	   
+	   return new ExplorerScreen();
+   }
+   
+   public boolean SearchVal() {
+	   
+	   return ExplorerScreen.searchfield.isDisplayed();
+   }
+   
+   public PlantDetails selectPlan() {
+	   
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air-Purifying Plants\"));"));
+	   ExplorerScreen.airPlantsLink.click();
+	   return new PlantDetails();
+   }
+   
+   public PlantDetails selectExistingPlan() {
+	   
+	   driver.findElement(MobileBy.AndroidUIAutomator(
+  			   "new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aloe //vera\"));"));
+	   ExplorerScreen.aloeVeraLink.click();
+	   return new PlantDetails();
+   }
+   
+   public MyGardenPage GardenTab() {
+	   
+	   ExplorerScreen.myGardenTab.click();
+	   return new MyGardenPage();
+   }
+   
+   public FreshTipsPage FreshTipsTab() {
+	   
+	   ExplorerScreen.freshTips.click();
+	   return new FreshTipsPage();
+   }
+   
+   public MyAccountScreen AccountTab() {
+	   
+	   ExplorerScreen.myaccount.click();
+	   return new MyAccountScreen();
+   }
+   
 
 }
