@@ -1,7 +1,7 @@
 # MyGarden
 This project covers the Smoke and Regression test cases of My Garden android app. Page Factory model is used while developing the automation framework.
 
-## Pre-requisites
+### Pre-requisites
 Below softwares needs to be installed before importing the project from Git: 
 - Download Java from [here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and set Java_Home in environmental variables. If you are new to java then refer [this](https://www.youtube.com/watch?v=FqpmH8MVO6A&t=5s) link to set the java environment variables
 - Download Android STUDIO from [here](https://developer.android.com/studio/index.html) and check Android installation path in Machine
@@ -12,7 +12,7 @@ Below softwares needs to be installed before importing the project from Git:
 - Download Appium and Selenium Java client library from [here](http://appium.io/downloads.html)
 - Install Eclipse using [this](https://www.eclipse.org/downloads/packages/release/helios/sr1/eclipse-ide-java-developers) link.
 
-## Steps to import the project
+### Steps to import the project
 There are two methods from which a project can be addded to the local machine: 
 1. Download the zip file from the git: 
 - Download the zip file of a project from the git.
@@ -26,7 +26,7 @@ There are two methods from which a project can be addded to the local machine:
 - Select Clone URI and click on Next button.
 - Enter all the mandatory data and Click on Finish button.
 
-## How to run the project?
+### How to run the project?
 To run the project successfully follow the steps mentioned below: 
 - Connect the actual device to the laptop.
 - Make sure that Appium server is up and running.
